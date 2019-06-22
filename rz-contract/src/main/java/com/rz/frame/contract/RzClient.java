@@ -27,12 +27,7 @@ public class RzClient implements IRzSerivce {
 	}
 	
 	
-	public static void main(String[] args) {
-		RzRequset requset=new RzRequset();
-		requset.setName("付润泽");
-		RzResponse rzList = getInstance().getRzList(requset);
-		System.out.println(JsonUtils.toJSON(rzList));
-	}
+
 	
  
 	

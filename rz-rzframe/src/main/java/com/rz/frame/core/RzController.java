@@ -1,6 +1,8 @@
 package com.rz.frame.core;
 
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.rz.frame.entity.Constant;
 import com.rz.frame.entity.MetaInfo;
 import com.rz.frame.utils.JsonUtils;
@@ -27,7 +29,7 @@ public class RzController {
 	}
 	
 	@RequestMapping(value = "/api/execApi/{apiName}")
-	public String execApi(@PathVariable("apiName") String apiName, @RequestBody String request) {
+	public JSON  execApi(@PathVariable("apiName") String apiName, @RequestBody String request) {
 		try {
 			MetaInfo metaInfo = Container.get(Constant.SERVICE_NAME);
 			Class<?> serviceClass = metaInfo.getRequestClass();
@@ -35,11 +37,11 @@ public class RzController {
 			Method method = serviceClass.getDeclaredMethod(apiName, methodMeta.getRequestClass());
 			Object rq = JsonUtils.toBean(request, methodMeta.getRequestClass());
 			Object invoke = method.invoke(serviceClass.newInstance(), rq);
-			return JsonUtils.toJSON(invoke);
+			return JsonUtils.toJSONObject(invoke);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		return "";
+		return null;
 		
 	}
 }
