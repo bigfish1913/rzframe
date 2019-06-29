@@ -6,7 +6,7 @@ import sun.swing.StringUIClientPropertyKey;
 import java.util.List;
 
 public class RedisUtils {
-	static Jedis jedis = new Jedis("localhost");
+	static Jedis jedis = new Jedis("192.168.0.108");
 	
 	
 	public static <T> T get(String key, Class<T> clazz) {

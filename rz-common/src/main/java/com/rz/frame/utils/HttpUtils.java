@@ -144,6 +144,47 @@ public class HttpUtils {
 		return null;
 	}
 	
+	
+	public static String httpPost(String url, JSON json,int timeOut) {
+		String result = null;
+		CloseableHttpClient httpClient = HttpClients.createDefault();
+		HttpPost post = new HttpPost(url);
+		
+		CloseableHttpResponse response = null;
+		try {
+			StringEntity postEntity = new StringEntity(json.toString(), Charset.forName("UTF-8"));
+			postEntity.setContentEncoding("UTF-8");
+			// 发送Json格式的数据请求
+			postEntity.setContentType("application/json");
+			post.setEntity(postEntity);
+			
+			response = httpClient.execute(post);
+			if (response != null && response.getStatusLine().getStatusCode() == 200) {
+				HttpEntity entity = response.getEntity();
+				result = entityToString(entity);
+			}
+			return result;
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		} catch (ClientProtocolException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				httpClient.close();
+				if (response != null) {
+					response.close();
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		return null;
+	}
+	
+	
 	private static String entityToString(HttpEntity entity) throws IOException {
 		String result = null;
 		if (entity != null) {

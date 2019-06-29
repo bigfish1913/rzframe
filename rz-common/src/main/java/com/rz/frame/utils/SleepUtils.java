@@ -5,9 +5,9 @@ public class SleepUtils {
 		Sleep(seconds*1000);
 	}
 	
-	public static void Sleep(long second) {
+	public static void Sleep(long miniSecond) {
 		try {
-			Thread.sleep(second);
+			Thread.sleep(miniSecond);
 		} catch (InterruptedException ex) {
 		
 		}

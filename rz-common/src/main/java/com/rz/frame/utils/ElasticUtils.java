@@ -29,7 +29,7 @@ public class ElasticUtils {
 
 	static {
 		if (restClient == null) {
-			restClient = new RestHighLevelClient(RestClient.builder(new HttpHost("10.32.121.3", 9200, "http")));
+			restClient = new RestHighLevelClient(RestClient.builder(new HttpHost("192.168.0.108", 9200, "http")));
 		}
 	}
 
