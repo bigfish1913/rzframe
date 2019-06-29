@@ -36,7 +36,7 @@ public class AspectHandler {
     //后置
     @AfterReturning(returning = "ret",pointcut = "webLog()")
     public void doAfter(Object ret) throws Throwable {
-        System.out.println(JsonUtils.serializeObject(ret));
+        System.out.println(ret);
     }
 
 }
