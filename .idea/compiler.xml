@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rz-admin" />
+        <module name="rz-biz" />
         <module name="rz-common" />
         <module name="rz-contract" />
         <module name="rz-dal" />

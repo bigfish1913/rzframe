@@ -3,9 +3,9 @@ package com.rz.frame.utils;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-@Configuration
-@ConfigurationProperties(prefix = "com.rz.frame")
-@PropertySource(value = "classpath:resource.properties")
+//@Configuration
+//@ConfigurationProperties(prefix = "com.rz.frame")
+//@PropertySource(value = "classpath:resource.properties")
 public class Resource {
 
 

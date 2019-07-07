@@ -5,9 +5,7 @@ import com.alibaba.fastjson.serializer.JSONLibDataFormatSerializer;
 import com.alibaba.fastjson.serializer.PropertyFilter;
 import com.alibaba.fastjson.serializer.SerializeConfig;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import org.elasticsearch.index.mapper.ObjectMapper;
 
-import java.io.IOException;
 import java.util.*;
 
 

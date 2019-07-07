@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class FreeMarkerController {
 
-    @Autowired
-    private Resource resource;
+//    @Autowired
+//    private Resource resource;
 
-    @RequestMapping(value = "author")
-    public String index(ModelMap map){
-        map.addAttribute("resource",resource);
-        return "author";
-    }
+//    @RequestMapping(value = "author")
+//    public String index(ModelMap map){
+//        map.addAttribute("resource",resource);
+//        return "author";
+//    }
 }

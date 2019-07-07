@@ -16,7 +16,7 @@ public class ElasticTcpUtilsTest {
 		jsonObject.put("resCode",400);
 		jsonObject.put("threadCount",40);
 		jsonObject.put("dataChangeLastTime", LocalDateTime.now());
-		ElasticTcpUtils.add("rzresult","result",jsonObject);
+ 		ElasticTcpUtils.add("rzresult","result",jsonObject);
 	}
 	
 	@Test

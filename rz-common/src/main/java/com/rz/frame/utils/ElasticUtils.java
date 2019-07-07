@@ -10,6 +10,7 @@ import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.unit.TimeValue;
@@ -38,7 +39,7 @@ public class ElasticUtils {
 
 			IndexRequest indexRequest = new IndexRequest(indexName, type);
 			indexRequest.source(docment.toString(), XContentType.JSON);
-			restClient.index(indexRequest);
+			restClient.index(indexRequest, RequestOptions.DEFAULT);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -52,7 +53,7 @@ public class ElasticUtils {
 			for (JSONObject docment : docments) {
 				request.add(indexRequest.source(docment.toJSONString(), XContentType.JSON));
 			}
-			restClient.bulk(request);
+			restClient.bulk(request,RequestOptions.DEFAULT);
 		} catch (IOException e) {
 			e.printStackTrace();
 
@@ -82,7 +83,7 @@ public class ElasticUtils {
 			IndexRequest indexRequest = new IndexRequest(indexName, type);
 			for (JSONObject docment : docments) {
 				indexRequest.source(docment.toString(), XContentType.JSON);
-				restClient.index(indexRequest);
+				restClient.index(indexRequest,RequestOptions.DEFAULT);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -103,7 +104,7 @@ public class ElasticUtils {
 			sourceBuilder.from((index - 1) * size);
 			sourceBuilder.size(size);
 			sourceBuilder.timeout(new TimeValue(60, TimeUnit.SECONDS));
-			SearchResponse searchResponse = restClient.search(searchRequest);
+			SearchResponse searchResponse = restClient.search(searchRequest,RequestOptions.DEFAULT);
 			return searchResponse;
 		} catch (Exception ex) {
 			return null;
@@ -119,7 +120,7 @@ public class ElasticUtils {
 			DeleteRequest deleteRequest = new DeleteRequest(indexName);
 			deleteRequest.type(type);
 
-			DeleteResponse deleteResponse = restClient.delete(deleteRequest);
+			DeleteResponse deleteResponse = restClient.delete(deleteRequest,RequestOptions.DEFAULT);
 			return deleteResponse;
 		} catch (Exception ex) {
 			return null;

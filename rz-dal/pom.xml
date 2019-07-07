@@ -5,28 +5,27 @@
     <parent>
         <artifactId>rzframe</artifactId>
         <groupId>com.rz.frame</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <version>1.0.0</version>
     <artifactId>rz-dal</artifactId>
 
     <name>rz-dal</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
+
 
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.rz.frame</groupId>
+            <artifactId>rz-common</artifactId>
         </dependency>
     </dependencies>
 

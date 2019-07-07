@@ -33,10 +33,10 @@ public class ElasticTcpUtils {
 			e.printStackTrace();
 		}
 	}
-	
-	
-	
-	
+
+
+
+
 	public static void add(String indexName, String type, JSONObject docment) {
 		try {
 			IndexRequest indexRequest = new IndexRequest(indexName, type);
@@ -66,7 +66,7 @@ public class ElasticTcpUtils {
 			SearchRequest searchRequest = new SearchRequest(indexName);
 			searchRequest.types(type);
 			//			searchRequest.
-			
+
 			// 2、用SearchSourceBuilder来构造查询请求体 ,请仔细查看它的方法，构造各种查询的方法都在这。
 			SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 			sourceBuilder.query(QueryBuilders.matchAllQuery());
@@ -79,7 +79,7 @@ public class ElasticTcpUtils {
 			ex.printStackTrace();
 		}
 		return null;
-		
-		
+
+
 	}
 }

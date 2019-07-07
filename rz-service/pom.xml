@@ -5,10 +5,10 @@
     <parent>
         <artifactId>rzframe</artifactId>
         <groupId>com.rz.frame</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
     <artifactId>rz-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>rz-service</name>
     <description>rz-service</description>
 
@@ -55,14 +55,10 @@
         <dependency>
             <groupId>com.rz.frame</groupId>
             <artifactId>rz-rzframe</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.rz.frame</groupId>
             <artifactId>rz-contract</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 

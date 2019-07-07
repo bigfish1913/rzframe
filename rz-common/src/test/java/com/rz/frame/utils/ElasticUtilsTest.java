@@ -16,6 +16,6 @@ public class ElasticUtilsTest {
 		jsonObject.put("resCode",500);
 		jsonObject.put("threadCount",50);
 		jsonObject.put("dataChangeLastTime", LocalDateTime.now());
-		ElasticUtils.add("rzresult","result",jsonObject);
+// 	ElasticUtils.add("rzresult","result",jsonObject);
 	}
 }
