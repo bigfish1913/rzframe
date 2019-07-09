@@ -8,8 +8,6 @@
 
     <link href="img/favicon.png" rel="icon">
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Bootstrap core CSS -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!--external css-->
     <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
@@ -25,19 +23,22 @@
     *********************************************************************************************************************************************************** -->
 <div id="login-page">
     <div class="container">
-        <form class="form-login" action="index.html" style="width: 500px">
+        <form class="form-login" action="valide" style="max-width: 450px" method="post">
             <h2 class="form-login-heading">登录</h2>
             <div class="login-wrap">
-                <input type="text" class="form-control" placeholder="User ID" autofocus>
+                <input type="text" class="form-control" placeholder="用户名" name="userName" autofocus>
                 <br>
-                <input type="password" class="form-control" placeholder="Password">
+                <input type="password" class="form-control" placeholder="密码" name="password">
                 <label class="checkbox">
                     <input type="checkbox" value="remember-me"> 记住密码
                     <span class="pull-right">
             <a data-toggle="modal" href="login.html#myModal"> 忘记密码?</a>
             </span>
                 </label>
-                <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
+                <button class="btn btn-theme btn-block" type="submit"><i class="fa fa-lock"></i> 登录</button>
+                <#if errorMsg??>
+                <div class="label" style="color: red"> 用户名或密码错误</div>
+                </#if>
                 <hr>
                 <div class="login-social-link centered">
                     <p>其他登录方式</p>

@@ -1,6 +1,7 @@
 package com.rz.frame.tomcat;
 
 import com.rz.frame.nio.BioServer;
+import org.apache.http.cookie.Cookie;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,12 +14,14 @@ public class Tomcat {
 
     public Tomcat(int port) {
         try {
+
             serverSocket = new ServerSocket(port);
             System.out.println("服务端启动成功，端口是：" + port);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
 
     public void start() {
         while (true) {
