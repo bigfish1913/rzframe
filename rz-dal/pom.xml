@@ -27,6 +27,17 @@
             <groupId>com.rz.frame</groupId>
             <artifactId>rz-common</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.ctrip.platform</groupId>
+            <artifactId>dal-client</artifactId>
+            <version>1.16.10</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.16</version>
+        </dependency>
+
     </dependencies>
 
     <build>

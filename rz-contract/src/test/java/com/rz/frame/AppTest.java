@@ -6,7 +6,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.rz.frame.contract.RzClient;
 import com.rz.frame.contract.RzRequset;
 import com.rz.frame.contract.RzResponse;
-import com.rz.frame.utils.ElasticTcpUtils;
+// import com.rz.frame.utils.ElasticTcpUtils;
 import com.rz.frame.utils.JsonUtils;
 import com.rz.frame.utils.SleepUtils;
 import com.rz.frame.utils.TaskUtils;
@@ -42,7 +42,7 @@ public class AppTest {
 				objectList.add(jsonObject);
 				System.out.println(String.format("Response Code:%s Cost time:%s ms", response.getRetMsg(), (end - start)));
 			});
-			ElasticTcpUtils.addList("rzresult", "result", objectList);
+			// ElasticTcpUtils.addList("rzresult", "result", objectList);
 			SleepUtils.Sleep(1000);
 			
 		}

@@ -1,0 +1,174 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RunMain<rz-admin>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.RunMain",
+            "projectName": "rz-admin"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RzAdminBoot<rz-admin>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.RzAdminBoot",
+            "projectName": "rz-admin"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<rz-biz>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.App",
+            "projectName": "rz-biz"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BioClient<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.nio.BioClient",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BioServer<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.nio.BioServer",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NioClient<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.nio.NioClient",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NioServer<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.nio.NioServer",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.pool.App",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Tomcat<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.tomcat.Tomcat",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppMain<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.utils.AppMain",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Game<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.utils.Game",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LockTest<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.utils.LockTest",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-jvmTest<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.utils.jvmTest",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NettyCient<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.utils.netty.NettyCient",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NettyServer<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.utils.netty.NettyServer",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NettyUtils<rz-common>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.utils.netty.NettyUtils",
+            "projectName": "rz-common"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppTest<rz-contract>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.AppTest",
+            "projectName": "rz-contract"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<rz-dal>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.App",
+            "projectName": "rz-dal"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<rz-doc>",
+            "request": "launch",
+            "mainClass": "com.rz.frame.App",
+            "projectName": "rz-doc"
+        }
+    ]
+}

@@ -14,6 +14,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
  		{"com.rz.frame.controller"})
 public class RzAdminBoot {
 	public static void main(String[] args) {
+		System.out.println("hello");
 		SpringApplication.run(RzAdminBoot.class);
 	}
 }

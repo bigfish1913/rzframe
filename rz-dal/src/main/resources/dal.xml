@@ -1,0 +1,7 @@
+<dal name="rz">
+	<databaseSets>
+		<databaseSet name="rzframe" provider="mySqlProvider">
+            <add name="rzframe" databaseType="Master" sharding="" connectionString="rzframe"/>   
+		</databaseSet>
+	</databaseSets>
+</dal>
