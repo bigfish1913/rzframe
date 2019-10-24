@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - AppTest",
+            "request": "launch",
+            "mainClass": "com.rz.frame.AppTest",
+            "projectName": "rz-common"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",

@@ -1,33 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="rz-admin:Web exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/netty/NettyUtils.java" line="27" />
     <bookmark url="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/utils/RedisUtilsTest.java" />
+    <bookmark url="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/exdao/RzUserExDao.java" line="22" />
+    <bookmark url="file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/utils/RzWebMvcConfigurerAdapter.java" />
+    <bookmark url="file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/LoginController.java" line="59" />
+    <bookmark url="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/net/URL.java" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3258aa84-2664-4d11-9de2-91ce69d774e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzMenuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzRoleMenuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzUserRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dbtool/BaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dbtool/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzRoleMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzUserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PooledConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/resources/dal.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/resources/datasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/SpringTomcatStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/utils/LogCostFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/utils/RzWebMvcConfigurerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/static/css/DT_bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/static/css/demo_page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/static/css/demo_table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/static/css/demo_table_jui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/static/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/static/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/static/css/jquery.dataTables_themeroller.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/static/js/libs/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/static/js/libs/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/static/js/libs/vue.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/static/js/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/templates/power/usermanager.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/templates/user.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-biz/src/main/java/com/rz/frame/BizFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-biz/src/main/java/com/rz/frame/power/MenuImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-biz/src/main/java/com/rz/frame/power/RoleImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-biz/src/main/java/com/rz/frame/power/UserImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/CookieUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/MD5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/observe/AObjserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/observe/BObjserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/observe/IObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/observe/ObjserverMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/observe/ObserveModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/observe/ObserverContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/SingletonModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/SingletonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/SingletonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz01/GuavaEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz01/UnmodifiableMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz02/ComputeIfAbsent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz02/TestMultimap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz03/CompletableFutureDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz03/ConcurrentMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz03/HashMapWheelTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz04/BufferTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz04/FileChannelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz04/FileCreateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/MapedFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/OrderIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/OrderIOFileAppend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/RzAppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/RzAutoInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Singleton/LazySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Singleton/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/TestUnSafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/AMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/Guard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/LazySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/ShallowCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/UnsafeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/cas/$Proxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/cas/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/cas/AutoCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/cas/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/cas/CounterClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/cas/ICounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/cas/ReentrantLockCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/cas/RzCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/cas/RzCounter1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/cas/SyncCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/$Proxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/DynaminProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/IWoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/RxProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/RzProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/WorkerProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/sourceTest/TestUnSafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/sourceTest/Testfor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/sourceTest/Timeout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/exdao/RzMenuExDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/exdao/RzRoleExDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/exdao/RzUserExDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/exdao/RzUserRoleExDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/EntityContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/GlobalConstat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/ThreadUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/annotate/RzEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/utils/DalFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-dao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-doc/src/qmq/问题合集.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-service/src/main/java/com/rz/frame/rzservice/DemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-service/src/main/java/com/rz/frame/rzservice/DemoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-service/src/main/java/com/rz/frame/rzservice/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-service/src/main/resources/dubbo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/RzAdminBoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/RzAdminBoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rz-contract/src/test/java/com/rz/frame/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-contract/src/test/java/com/rz/frame/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rz-dal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/model/JsonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/model/JsonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/model/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/model/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/utils/AspectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/utils/AspectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/utils/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/utils/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-admin/src/main/resources/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/templates/login.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/aside.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/aside.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/footer.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/footer.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/header.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/header.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/script.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/script.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rz-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rz-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/RedisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/RedisUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/pool/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/rzdal/pool/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/pool/PoolImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/rzdal/pool/PoolImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/pool/PoolManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/rzdal/pool/PoolManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/pool/PooledConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/rzdal/pool/PooledConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzMenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzMenuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzRoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dbtool/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dbtool/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/pool/PoolImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/pool/PoolManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PooledConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/pool/PooledConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rz-service/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,6 +168,7 @@
     <ignored path="$PROJECT_DIR$/rz-contract/target/" />
     <ignored path="$PROJECT_DIR$/rz-rzframe/target/" />
     <ignored path="$PROJECT_DIR$/rz-biz/target/" />
+    <ignored path="$PROJECT_DIR$/rz-dao/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +178,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dbtool/UserDao.java">
+        <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/SingletonUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="69">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/SingletonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,94 +199,85 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dbtool/BaseDao.java">
+        <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="230">
+              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java">
+        <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton03.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="159" selection-start-line="159" selection-end-line="159" />
-              <folding>
-                <element signature="e#700#718#0" expanded="true" />
-                <element signature="e#746#747#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-                <element signature="method#shutDown#0;class#PoolImpl#0" />
-                <element signature="e#5601#5645#1" />
-              </folding>
+            <state relative-caret-position="138">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rz-dal/pom.xml">
+        <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton04.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+            <state relative-caret-position="92">
+              <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolManager.java">
+        <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton05.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="368">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="16" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton06.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding>
-                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#210#211#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/App.java">
+        <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton07.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="-102">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rz-dal/src/main/resources/jdbcPool.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/ResultSet.java">
+        <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton02.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+            <state relative-caret-position="207">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <element signature="e#229#230#0" expanded="true" />
+                <element signature="e#251#252#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/Connection.java">
+        <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/SingletonModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="63" column="60" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
+            <state relative-caret-position="276">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -160,6 +289,8 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="HTML File" />
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -173,9 +304,15 @@
       <find>httpco</find>
       <find>2.1.6.RELEAS</find>
       <find>httpcore</find>
+      <find>ConcurrentHashMap</find>
+      <find>U</find>
+      <find>Clogger</find>
+      <find>@Test</find>
+      <find>exceptionally</find>
     </findStrings>
     <replaceStrings>
       <replace>1.8</replace>
+      <replace>RzHashMap</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -184,59 +321,66 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/utils/ElasticUtilsTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/utils/Resource.java" />
-        <option value="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/FreeMarkerController.java" />
-        <option value="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/RzAdminBoot.java" />
-        <option value="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/TomcatListen.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/tomcat/tomcat.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/pool/App.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/pool/CreatePool.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/pool/CreatePool.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/pool/PoolManager.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/pool/PoolImpl.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/App.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/CreatePool.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/pool/MyPoolImpl.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/pool/PoolManager.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/pool/PoolImpl.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/nio/NioClient.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/nio/BioClient.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/tomcat/RzRequestHeader.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/tomcat/Tomcat.java" />
-        <option value="$PROJECT_DIR$/rz-admin/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/model/UserInfo.java" />
-        <option value="$PROJECT_DIR$/rz-admin/pom.xml" />
-        <option value="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/ElasticTcpUtils.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/ElasticUtils.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/utils/ElasticTcpUtilsTest.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/cas/$Proxy.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/$Proxy.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/Worker.java" />
         <option value="$PROJECT_DIR$/rz-common/pom.xml" />
-        <option value="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/GlobalConstant.java" />
-        <option value="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/aside.ftl" />
-        <option value="$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/header.ftl" />
-        <option value="$PROJECT_DIR$/rz-admin/src/main/resources/templates/login.ftl" />
-        <option value="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/RedisUtils.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/DateUtils.java" />
-        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/utils/RedisUtilsTest.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PooledConnection.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/MyPoolImpl.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzMenu.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzMenuDao.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzRoleDao.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzRoleMenuDao.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzUserRoleDao.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzUserDao.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolManager.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dbtool/BaseDao.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dbtool/UserDao.java" />
-        <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java" />
-        <option value="$PROJECT_DIR$/rz-dal/pom.xml" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/RzProxy.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Singleton/LazySingleton.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/LazySingleton.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/AMain.java" />
+        <option value="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/RzAdminBoot.java" />
+        <option value="$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/SpringTomcatStart.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/AppTest.java" />
         <option value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/App.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/Clogger.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/OrderIO.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/FileChannelTest.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/MapedFile.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/OrderIOFileAppend.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/rz01/UnmodifiableMap.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/rz02/ComputeIfAbsent.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/rz02/TestMultimap.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/rz03/ConcurrentMapTest.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/rz03/HashMapWheelTimer.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/rz03/CompletableFutureDemo.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz03/CompletableFutureDemo.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz04/FileChannelTest.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz04/FileCreateTest.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz04/BufferTest.java" />
+        <option value="$PROJECT_DIR$/rz-doc/src/qmq/问题合集.md" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz05/ObserveModel.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz05/observe/Sig.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz05/observe/Subject.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz05/observe/IObserver.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz05/observe/ObserverContainer.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz05/observe/ObserveModel.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz05/observe/AObjserver.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz05/observe/BObjserver.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz05/observe/ObjserverMain.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz05/Sig.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz05/singletons/SingletonUtils.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz05/SingletonUtils.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton01.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/SingletonUtils.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/SingletonModel.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton02.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/SingletonTest.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton03.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton04.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton05.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/singleton06.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton06.java" />
+        <option value="$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton07.java" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -254,48 +398,14 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rz-admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rz-admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rz-admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rz-doc" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rzframe" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rzframe" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rzframe" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="8" />
-    <option name="y" value="343" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="71" />
+    <option name="width" value="1856" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -306,8 +416,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -318,31 +426,7 @@
             <path>
               <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="rzframe" type="462c0819:PsiDirectoryNode" />
-              <item name="rz-admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rzframe" type="462c0819:PsiDirectoryNode" />
-              <item name="rz-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rzframe" type="462c0819:PsiDirectoryNode" />
-              <item name="rz-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rzframe" type="462c0819:PsiDirectoryNode" />
               <item name="rz-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rzframe" type="462c0819:PsiDirectoryNode" />
-              <item name="rz-common" type="462c0819:PsiDirectoryNode" />
-              <item name=".settings" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
@@ -356,6 +440,14 @@
               <item name="rz-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rzframe" type="462c0819:PsiDirectoryNode" />
+              <item name="rz-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
@@ -384,65 +476,59 @@
             <path>
               <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="rzframe" type="462c0819:PsiDirectoryNode" />
-              <item name="rz-dal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rzframe" type="462c0819:PsiDirectoryNode" />
-              <item name="rz-dal" type="462c0819:PsiDirectoryNode" />
+              <item name="rz-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rzframe" type="462c0819:PsiDirectoryNode" />
-              <item name="rz-dal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rzframe" type="462c0819:PsiDirectoryNode" />
-              <item name="rz-dal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rzframe" type="462c0819:PsiDirectoryNode" />
-              <item name="rz-dal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="frame" type="462c0819:PsiDirectoryNode" />
+              <item name="LearnJava" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="rzframe" type="462c0819:PsiDirectoryNode" />
-              <item name="rz-dal" type="462c0819:PsiDirectoryNode" />
+              <item name="rz-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="frame" type="462c0819:PsiDirectoryNode" />
-              <item name="dbtool" type="462c0819:PsiDirectoryNode" />
+              <item name="LearnJava" type="462c0819:PsiDirectoryNode" />
+              <item name="modelDesign" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="rzframe" type="462c0819:PsiDirectoryNode" />
-              <item name="rz-dal" type="462c0819:PsiDirectoryNode" />
+              <item name="rz-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="frame" type="462c0819:PsiDirectoryNode" />
-              <item name="pool" type="462c0819:PsiDirectoryNode" />
+              <item name="LearnJava" type="462c0819:PsiDirectoryNode" />
+              <item name="modelDesign" type="462c0819:PsiDirectoryNode" />
+              <item name="md01" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="rzframe" type="462c0819:PsiDirectoryNode" />
-              <item name="rz-dal" type="462c0819:PsiDirectoryNode" />
+              <item name="rz-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frame" type="462c0819:PsiDirectoryNode" />
+              <item name="LearnJava" type="462c0819:PsiDirectoryNode" />
+              <item name="modelDesign" type="462c0819:PsiDirectoryNode" />
+              <item name="md01" type="462c0819:PsiDirectoryNode" />
+              <item name="singletons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rzframe" type="462c0819:PsiDirectoryNode" />
+              <item name="rz-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frame" type="462c0819:PsiDirectoryNode" />
+              <item name="LearnJava" type="462c0819:PsiDirectoryNode" />
+              <item name="rz05" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
@@ -451,30 +537,35 @@
             <path>
               <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="&lt; 1.8.0_192 &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: redis.clients:jedis:3.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="&lt; 1.8.0_192 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: redis.clients:jedis:3.0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="jedis-3.0.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="&lt; 1.8.0_192 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rzframe" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: redis.clients:jedis:3.0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="jedis-3.0.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="jedis" type="462c0819:PsiDirectoryNode" />
+              <item name="&lt; 1.8.0_192 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -485,18 +576,21 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563116686156" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571931649551" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dubbo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RuoYi" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30668128" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -506,25 +600,30 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.rz.frame.LearnJava.modelDesign.md01" />
+      <recent name="com.rz.frame.LearnJava.modelDesign" />
+      <recent name="com.rz.frame.LearnJava.rz05" />
       <recent name="com.rz.frame" />
       <recent name="com.rz.frame.utils" />
-      <recent name="com.rz.frame.utils.exception" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\open\rzframe\rz-admin\src\main\resources\static\js\libs" />
       <recent name="D:\work\open\rzframe\rz-dal\src\main\resources" />
       <recent name="D:\work\open\rzframe\rz-admin\src\main\resources\static\img" />
       <recent name="D:\work\open\rzframe\rz-admin\src\main\resources\templates" />
       <recent name="D:\work\open\rzframe\rz-admin\src\main\resources\templates\login" />
-      <recent name="D:\work\open\rzframe\rz-admin\src\main\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\open\rzframe\rz-dal\src\main\java\com\rz\frame" />
-      <recent name="D:\work\open\rzframe\rz-dal\src\main\java\com\rz\frame\entity" />
-      <recent name="D:\work\open\rzframe\rz-dal\src\main\java\com\rz\frame\dao" />
-      <recent name="D:\work\open\rzframe\rz-dal\src\main\java\com\rz\frame\pool" />
-      <recent name="D:\work\open\rzframe\rz-common\src\test\java\com\rz\frame\nio" />
+      <recent name="D:\work\open\rzframe\rz-doc\src\qmq" />
+      <recent name="D:\work\open\rzframe\rz-common\src\test\java\com\rz\frame" />
+      <recent name="D:\work\open\rzframe\rz-common\src\test\java\com\rz\frame\sourceTest" />
+      <recent name="D:\work\open\rzframe\rz-admin\src\main\resources\static\css" />
+      <recent name="D:\work\open\rzframe\rz-admin\src\main\resources\static\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.rz.frame.LearnJava.modelDesign.md01.singletons" />
+      <recent name="com.rz.frame.Unsafe" />
+      <recent name="com.rz.frame.exdao" />
       <recent name="com.rz.frame.pool" />
       <recent name="com.rz.frame.rzservice" />
     </key>
@@ -550,26 +649,13 @@
     </option>
     <option name="contentProportion" value="0.29424307" />
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rz.frame.App" />
-      <module name="rz-dal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rz.frame.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rz.frame.nio.BioClient" />
+  <component name="RunManager" selected="Application.SingletonTest">
+    <configuration name="CompletableFutureDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rz.frame.LearnJava.rz03.CompletableFutureDemo" />
       <module name="rz-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rz.frame.nio.*" />
+          <option name="PATTERN" value="com.rz.frame.LearnJava.rz03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -577,12 +663,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rz.frame.tomcat.Tomcat" />
+    <configuration name="FileCreateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rz.frame.LearnJava.rz04.FileCreateTest" />
       <module name="rz-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rz.frame.tomcat.*" />
+          <option name="PATTERN" value="com.rz.frame.LearnJava.rz04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -590,31 +676,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisUtilsTest.set" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HashMapWheelTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rz.frame.LearnJava.rz03.HashMapWheelTimer" />
       <module name="rz-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rz.frame.utils.*" />
+          <option name="PATTERN" value="com.rz.frame.LearnJava.rz03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.rz.frame.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.rz.frame.utils.RedisUtilsTest" />
-      <option name="METHOD_NAME" value="set" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RzAdminBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="rz-admin" />
+    <configuration name="ObjserverMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rz.frame.LearnJava.modelDesign.md01.observe.ObjserverMain" />
+      <module name="rz-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rz.frame.pool.*" />
+          <option name="PATTERN" value="com.rz.frame.LearnJava.modelDesign.md01.observe.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rz.frame.RzAdminBoot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingletonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rz.frame.LearnJava.modelDesign.md01.singletons.SingletonTest" />
+      <module name="rz-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rz.frame.LearnJava.modelDesign.md01.singletons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -626,13 +722,113 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tomcat 9.0.14" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.14" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/rz_admin_Web_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="rz-admin:Web exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/rz_admin_Web_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_rzframe" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55189" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="jreHome" value="C:/Program Files/Java/jdk1.8.0_181" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JProfiler">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="rz-admin:Web exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.HashMapWheelTimer" />
+      <item itemvalue="Application.CompletableFutureDemo" />
+      <item itemvalue="Application.FileCreateTest" />
+      <item itemvalue="Spring Boot.RzServiceApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.14" />
+      <item itemvalue="Application.ObjserverMain" />
+      <item itemvalue="Application.SingletonTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.RedisUtilsTest.set" />
-        <item itemvalue="Spring Boot.RzAdminBoot" />
-        <item itemvalue="Application.Tomcat" />
-        <item itemvalue="Application.BioClient" />
+        <item itemvalue="Application.SingletonTest" />
+        <item itemvalue="Application.ObjserverMain" />
+        <item itemvalue="Application.FileCreateTest" />
+        <item itemvalue="Application.CompletableFutureDemo" />
+        <item itemvalue="Application.HashMapWheelTimer" />
       </list>
     </recent_temporary>
   </component>
@@ -676,7 +872,66 @@
       <workItem from="1563093620851" duration="595000" />
       <workItem from="1563097467466" duration="466000" />
       <workItem from="1563113611403" duration="1875000" />
-      <workItem from="1563115858546" duration="816000" />
+      <workItem from="1563115858546" duration="927000" />
+      <workItem from="1563197332050" duration="7091000" />
+      <workItem from="1563285204347" duration="3324000" />
+      <workItem from="1563369062273" duration="11672000" />
+      <workItem from="1563410576198" duration="1203000" />
+      <workItem from="1563457609260" duration="5414000" />
+      <workItem from="1563543545070" duration="5922000" />
+      <workItem from="1563625526424" duration="885000" />
+      <workItem from="1563626929777" duration="186000" />
+      <workItem from="1563627304703" duration="1035000" />
+      <workItem from="1563628416960" duration="3619000" />
+      <workItem from="1563702803567" duration="3698000" />
+      <workItem from="1563802819424" duration="1094000" />
+      <workItem from="1563804368742" duration="2564000" />
+      <workItem from="1563807405776" duration="177000" />
+      <workItem from="1563807649313" duration="4606000" />
+      <workItem from="1563889838975" duration="4653000" />
+      <workItem from="1563977154185" duration="931000" />
+      <workItem from="1563978311506" duration="2000" />
+      <workItem from="1563978629960" duration="1839000" />
+      <workItem from="1564064077259" duration="6668000" />
+      <workItem from="1564154139786" duration="5906000" />
+      <workItem from="1564202089957" duration="3681000" />
+      <workItem from="1564312099848" duration="3999000" />
+      <workItem from="1564581033009" duration="867000" />
+      <workItem from="1564816714531" duration="120000" />
+      <workItem from="1564819261208" duration="4147000" />
+      <workItem from="1564834504578" duration="621000" />
+      <workItem from="1564887867484" duration="2138000" />
+      <workItem from="1565014749934" duration="672000" />
+      <workItem from="1565095859666" duration="611000" />
+      <workItem from="1565098548229" duration="3154000" />
+      <workItem from="1565187673575" duration="1334000" />
+      <workItem from="1565270578576" duration="598000" />
+      <workItem from="1565359259763" duration="1677000" />
+      <workItem from="1565532809086" duration="1202000" />
+      <workItem from="1565787404208" duration="2046000" />
+      <workItem from="1567346526889" duration="18000" />
+      <workItem from="1569055040600" duration="696000" />
+      <workItem from="1569066870312" duration="597000" />
+      <workItem from="1569080651604" duration="60000" />
+      <workItem from="1569080959861" duration="1293000" />
+      <workItem from="1569119838964" duration="610000" />
+      <workItem from="1569140515510" duration="1172000" />
+      <workItem from="1569142219347" duration="1212000" />
+      <workItem from="1570545705542" duration="130000" />
+      <workItem from="1570889440666" duration="2909000" />
+      <workItem from="1570932467693" duration="3004000" />
+      <workItem from="1570964839982" duration="9620000" />
+      <workItem from="1571059871457" duration="691000" />
+      <workItem from="1571145178023" duration="1761000" />
+      <workItem from="1571233057865" duration="1941000" />
+      <workItem from="1571465319699" duration="598000" />
+      <workItem from="1571473987192" duration="4589000" />
+      <workItem from="1571542779932" duration="6907000" />
+      <workItem from="1571665993292" duration="663000" />
+      <workItem from="1571750383793" duration="1886000" />
+      <workItem from="1571837841991" duration="1769000" />
+      <workItem from="1571844018205" duration="272000" />
+      <workItem from="1571928744953" duration="2902000" />
     </task>
     <servers />
   </component>
@@ -713,7 +968,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112625000" />
+    <option name="totallyTimeSpent" value="257392000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -725,10 +980,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="71" y="0" width="1856" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20682302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23608018" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -738,12 +993,12 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3991323" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4052574" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39868566" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.032502707" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.19414316" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286334" />
@@ -753,10 +1008,12 @@
       <window_info anchor="bottom" id="Spring" order="14" weight="0.329718" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.329718" />
       <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.3308026" />
+      <window_info anchor="bottom" id="Application Servers" order="17" weight="0.329718" />
+      <window_info anchor="bottom" id="Statistic" order="18" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.015991472" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.1018931" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -872,24 +1129,6 @@
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/utils/GlobalExceptionHandler.java</url>
-          <line>13</line>
-          <properties />
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/utils/AspectHandler.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/utils/AspectHandler.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://D:/m2/org/springframework/boot/spring-boot-autoconfigure/2.1.6.RELEASE/spring-boot-autoconfigure-2.1.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/elasticsearch/rest/RestClientAutoConfiguration.java</url>
           <line>89</line>
           <properties />
@@ -909,99 +1148,249 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/RedisUtils.java</url>
-          <line>121</line>
+          <line>122</line>
           <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/RedisUtils.java</url>
-          <line>104</line>
+          <line>105</line>
           <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzUserDao.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://D:/m2/com/ctrip/platform/dal-client/1.16.10/dal-client-1.16.10.jar!/com/ctrip/platform/dal/dao/configure/DalConfigureFactory.class</url>
-          <line>336</line>
-          <properties />
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/App.java</url>
-          <line>18</line>
+          <line>26</line>
           <properties />
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java</url>
-          <line>69</line>
-          <properties />
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java</url>
-          <line>71</line>
-          <properties />
-          <option name="timeStamp" value="93" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java</url>
-          <line>75</line>
-          <properties />
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java</url>
+          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/pool/PoolImpl.java</url>
           <line>30</line>
           <properties />
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolManager.java</url>
+          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/pool/PoolManager.java</url>
           <line>9</line>
           <properties />
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java</url>
+          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/pool/PoolImpl.java</url>
           <line>134</line>
           <properties />
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/App.java</url>
-          <line>30</line>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dbtool/BaseDao.java</url>
+          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/BaseDao.java</url>
           <line>41</line>
           <properties />
           <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/BaseDao.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/BaseDao.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/EntityContainer.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/EntityContainer.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/EntityContainer.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/rzdal/EntityContainer.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/m2/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/InterceptorRegistration.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-service/src/main/java/com/rz/frame/rzservice/Provider.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-service/src/main/java/com/rz/frame/rzservice/Provider.java</url>
+          <line>9</line>
+          <properties />
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/RzAppTest.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/AMain.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="159" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/AMain.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/ShallowCopy.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/AMain.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/AMain.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/AMain.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/net/URL.java</url>
+          <line>624</line>
+          <properties />
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/AppTest.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/$Proxy.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/AppTest.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/dynamicproxy/AppTest.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/AMain.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/AMain.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/Unsafe/AMain.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/SpringTomcatStart.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/SpringTomcatStart.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/SpringTomcatStart.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/Program Files/Java/jdk1.8.0_192/jre/lib/rt.jar!/sun/nio/ch/FileChannelImpl.class</url>
+          <line>885</line>
+          <properties />
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/Program Files/Java/jdk1.8.0_192/jre/lib/rt.jar!/sun/nio/ch/FileChannelImpl.class</url>
+          <line>884</line>
+          <properties />
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/OrderIOFileAppend.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="201" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/OrderIOFileAppend.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz02/ComputeIfAbsent.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz03/CompletableFutureDemo.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="205" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1009,406 +1398,475 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>DateUtils.locateTimeToUnixTime(localDateTime)</expression-string>
+        <expression-string>o3</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>jedis.expireAt(key,senconds)</expression-string>
+        <expression-string>LazySingleton.class.getConstructor()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>jedis.setnx(key,JsonUtils.serializeObject(o))</expression-string>
+        <expression-string>file.getParent()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>client.bulk(request)</expression-string>
+        <expression-string>file.getParent().concat(&quot;\\&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new URL(file.getParent().concat(&quot;\\&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sizeOf(guard)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>U.compareAndSwapInt(this, SIZECTL, sc, -1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>spread(key.hashCode())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>key</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/ElasticTcpUtils.java">
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/nio/channels/FileChannel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="28" column="11" selection-end-line="85" />
+        <state relative-caret-position="20194">
+          <caret line="914" column="37" selection-start-line="914" selection-start-column="37" selection-end-line="914" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/ElasticUtils.java">
+    <entry file="file://$PROJECT_DIR$/rz-dal/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="32" column="114" selection-start-line="32" selection-start-column="114" selection-end-line="32" selection-end-column="114" />
+        <state relative-caret-position="851">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/utils/ElasticTcpUtilsTest.java">
+    <entry file="jar://D:/m2/cglib/cglib/3.2.12/cglib-3.2.12-sources.jar!/net/sf/cglib/proxy/Enhancer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+        <state relative-caret-position="851">
+          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+          <folding>
+            <element signature="e#10404#10405#0" expanded="true" />
+            <element signature="e#10460#10461#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rz-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="66" column="21" lean-forward="true" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+        <state relative-caret-position="874">
+          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/RzAdminBoot.java">
+    <entry file="jar://D:/m2/cglib/cglib/3.2.12/cglib-3.2.12-sources.jar!/net/sf/cglib/proxy/MethodInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="184">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/model/UserInfo.java">
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/OrderIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding>
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/GlobalConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/model/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-admin/src/main/resources/templates/author.ftl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-admin/src/main/resources/templates/home.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/aside.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/header.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/redis/clients/jedis/3.0.1/jedis-3.0.1.jar!/redis/clients/jedis/Jedis.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3339">
-          <caret line="208" column="16" selection-start-line="208" selection-start-column="16" selection-end-line="208" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-admin/src/main/resources/templates/utils/cssheader.ftl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-admin/src/main/resources/templates/login.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-admin/src/main/java/com/rz/frame/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/RedisUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2268">
-          <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
+        <state relative-caret-position="529">
+          <caret line="29" column="84" selection-start-line="29" selection-start-column="83" selection-end-line="29" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="207">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/utils/RedisUtilsTest.java">
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/OrderIOFileAppend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/redis/clients/jedis/3.0.1/jedis-3.0.1-sources.jar!/redis/clients/jedis/Jedis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6972">
-          <caret line="377" column="14" selection-start-line="377" selection-start-column="14" selection-end-line="377" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/DateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="1564">
+          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/MyPoolImpl.java" />
-    <entry file="jar://D:/m2/redis/clients/jedis/3.0.1/jedis-3.0.1-sources.jar!/redis/clients/jedis/BinaryClient.java">
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz01/GuavaEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/App.java" />
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/entity/RzMenu.java">
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz01/UnmodifiableMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        <state relative-caret-position="506">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz02/ComputeIfAbsent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="13" column="82" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/RzAppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/jre/lib/rt.jar!/sun/nio/ch/FileChannelImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19734">
+          <caret line="884" selection-start-line="884" selection-end-line="884" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22172">
+          <caret line="1005" column="19" selection-start-line="1005" selection-start-column="19" selection-end-line="1005" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/RzAutoInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz02/TestMultimap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz03/ConcurrentMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/util/concurrent/CompletableFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41469">
+          <caret line="1868" column="43" selection-start-line="1868" selection-start-column="43" selection-end-line="1868" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/m2/io/netty/netty-common/4.1.36.Final/netty-common-4.1.36.Final-sources.jar!/io/netty/util/HashedWheelTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8694">
+          <caret line="414" column="9" selection-start-line="414" selection-start-column="9" selection-end-line="414" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/MapedFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1679">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/nio/ByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13754">
+          <caret line="629" column="31" selection-start-line="629" selection-start-column="31" selection-end-line="629" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz03/HashMapWheelTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz03/CompletableFutureDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz04/FileCreateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz04/FileChannelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-doc/src/es/ES相关.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-doc/src/qmq/问题合集.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2070">
+            <caret line="90" column="15" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/rz04/BufferTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-doc/src/main/java/com/rz/frame/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="5" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-doc/.settings/org.eclipse.jdt.apt.core.prefs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="45" selection-start-line="38" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/utils/DalFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzMenuDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        <state relative-caret-position="207">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7130">
+          <caret line="352" column="30" selection-start-line="352" selection-start-column="30" selection-end-line="352" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/main/java/com/rz/frame/utils/RandomUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/observe/IObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/observe/ObserverContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/observe/ObserveModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#125#126#0" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/observe/AObjserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="56" />
+          <folding>
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/observe/BObjserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/observe/ObjserverMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzRoleDao.java">
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="230">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton05.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/SingletonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/SingletonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzRoleMenuDao.java">
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/SingletonModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="276">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton06.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzUserRoleDao.java">
+    <entry file="file://$PROJECT_DIR$/rz-common/src/test/java/com/rz/frame/LearnJava/modelDesign/md01/singletons/Singleton07.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/com/ctrip/platform/dal-client/1.16.10/dal-client-1.16.10.jar!/com/ctrip/platform/dal/dao/task/TaskAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/com/ctrip/platform/dal-client/1.16.10/dal-client-1.16.10.jar!/com/ctrip/platform/dal/dao/helper/DalDefaultJpaParser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dao/RzUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="-102">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/com/ctrip/platform/dal-client/1.16.10/dal-client-1.16.10.jar!/com/ctrip/platform/dal/dao/DalTableDao.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#2400#2401#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/com/ctrip/platform/dal-client/1.16.10/dal-client-1.16.10.jar!/com/ctrip/platform/dal/dao/helper/ServiceLoaderHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/resources/dal.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="52" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/resources/datasource.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://D:/m2/com/ctrip/platform/dal-client/1.16.10/dal-client-1.16.10.jar!/com/ctrip/platform/dal/dao/DalClientFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/com/ctrip/platform/dal-client/1.16.10/dal-client-1.16.10.jar!/com/ctrip/platform/dal/dao/configure/DalConfigureFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6321">
-          <caret line="338" column="50" selection-start-line="338" selection-start-column="39" selection-end-line="338" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PooledConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="63" column="60" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/resources/jdbcPool.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#224#225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/pool/PoolImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="159" selection-start-line="159" selection-end-line="159" />
-          <folding>
-            <element signature="e#700#718#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="method#shutDown#0;class#PoolImpl#0" />
-            <element signature="e#5601#5645#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dbtool/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/dbtool/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rz-dal/src/main/java/com/rz/frame/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1419,10 +1877,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>rz-admin:Web exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.30668128" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1465,12 +1925,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>rz-admin</last-edited>
+          <last-edited>Web|rz-admin</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.30668128" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

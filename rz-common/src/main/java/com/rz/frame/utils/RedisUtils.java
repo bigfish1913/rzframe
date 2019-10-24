@@ -7,7 +7,8 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class RedisUtils {
-    static Jedis jedis = new Jedis("192.168.0.108");
+//    static Jedis jedis = new Jedis("192.168.0.108");
+    static Jedis jedis = new Jedis("localhost");
 
 
     public static <T> T get(String key, Class<T> clazz) {

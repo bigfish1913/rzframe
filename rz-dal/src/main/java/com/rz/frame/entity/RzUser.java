@@ -78,8 +78,8 @@ public class RzUser implements DalPojo {
      * �ֻ���
      */
 	@Column(name = "user_mobileno")
-	@Type(value = Types.INTEGER)
-	private Integer userMobileno;
+	@Type(value = Types.VARCHAR)
+	private String userMobileno;
 
     /**
      * ����
@@ -165,11 +165,11 @@ public class RzUser implements DalPojo {
 		this.userAge = userAge;
 	}
 
-	public Integer getUserMobileno() {
+	public String getUserMobileno() {
 		return userMobileno;
 	}
 
-	public void setUserMobileno(Integer userMobileno) {
+	public void setUserMobileno(String userMobileno) {
 		this.userMobileno = userMobileno;
 	}
 

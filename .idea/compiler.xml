@@ -11,6 +11,7 @@
         <module name="rz-common" />
         <module name="rz-contract" />
         <module name="rz-dal" />
+        <module name="rz-dao" />
         <module name="rz-doc" />
         <module name="rz-rzframe" />
         <module name="rz-service" />

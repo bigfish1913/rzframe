@@ -11,6 +11,7 @@ import com.rz.frame.entity.RzUser;
 
 
 import com.ctrip.platform.dal.dao.helper.DalDefaultJpaParser;
+import com.rz.frame.rzdal.GlobalConstat;
 
 /**
  * @author fu
@@ -18,10 +19,13 @@ import com.ctrip.platform.dal.dao.helper.DalDefaultJpaParser;
  */
 public class RzUserDao {
 	private static final boolean ASC = true;
-	private DalTableDao<RzUser> client;
-	
+	protected DalTableDao<RzUser> client;
+	protected DalQueryDao  queryDao;
+
+
 	public RzUserDao() throws SQLException {
 		this.client = new DalTableDao<>(new DalDefaultJpaParser<>(RzUser.class));
+		 queryDao=new DalQueryDao(GlobalConstat.DB.rzframe);
 	}
 
 	/**

@@ -1,6 +1,5 @@
 package com.rz.frame;
 
-import static org.junit.Assert.assertTrue;
 
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
@@ -9,6 +8,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
+
 /**
  * Unit test for simple App.
  */
@@ -16,6 +16,11 @@ public class AppTest {
     /**
      * Rigorous Test :-)
      */
+
+    public static void main(String[] args) {
+        System.out.println("hello");
+    }
+
     @Test
     public void shouldAnswerWithTrue() {
         ConnectionFactory factory = new ConnectionFactory();
@@ -38,7 +43,7 @@ public class AppTest {
             channel.basicPublish("", QUEUE_NAME, null, message.getBytes("utf-8"));
             System.out.println("[send]：" + message);
             channel.close();
-            conn .close();
+            conn.close();
 
         } catch (IOException e) {
             e.printStackTrace();

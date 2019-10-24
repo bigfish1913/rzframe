@@ -15,6 +15,7 @@
         <module>rz-contract</module>
         <module>rz-rzframe</module>
         <module>rz-biz</module>
+        <module>rz-dao</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -176,7 +177,11 @@
                 <artifactId>httpcore</artifactId>
                 <version>${httpcore}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>2.6.0</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.rz.frame</groupId>

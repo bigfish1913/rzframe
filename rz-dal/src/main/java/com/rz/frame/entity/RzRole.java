@@ -23,28 +23,17 @@ import com.ctrip.platform.dal.dao.DalPojo;
 @Table(name = "rz_role")
 public class RzRole implements DalPojo {
 
-    /**
-     * ��������
-     */
     @Id
 	@Column(name = "id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Type(value = Types.BIGINT)
 	private Long id;
 
-    /**
-     * ��ɫ����
-     */
+
 	@Column(name = "role_name")
 	@Type(value = Types.VARCHAR)
 	private String roleName;
 
-    /**
-     * ��ɫId
-     */
-	@Column(name = "role_id")
-	@Type(value = Types.VARCHAR)
-	private String roleId;
 
     /**
      * ��ɫ״̬ 0 ����,1 ������
@@ -83,13 +72,7 @@ public class RzRole implements DalPojo {
 		this.roleName = roleName;
 	}
 
-	public String getRoleId() {
-		return roleId;
-	}
 
-	public void setRoleId(String roleId) {
-		this.roleId = roleId;
-	}
 
 	public Integer getRoleStatus() {
 		return roleStatus;

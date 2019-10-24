@@ -8,6 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.web.SpringServletContainerInitializer;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -31,4 +32,9 @@ public class BaseController {
         return userInfo;
 
     }
+
+
+
+
+
 }

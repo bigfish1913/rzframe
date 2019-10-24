@@ -2,11 +2,13 @@ package com.rz.frame.model;
 
 import com.alibaba.fastjson.JSONObject;
 
-public class JsonResult {
+import java.util.List;
+
+public class JsonResult<T> {
 	
 	private int code;
 	private String message;
-	private JSONObject data;
+	private List<T> data;
 	
 	public int getCode() {
 		return code;
@@ -24,11 +26,11 @@ public class JsonResult {
 		this.message = message;
 	}
 	
-	public JSONObject getData() {
+	public List<T> getData() {
 		return data;
 	}
 	
-	public void setData(JSONObject data) {
+	public void setData(List<T> data) {
 		this.data = data;
 	}
 }

@@ -23,14 +23,12 @@ import com.ctrip.platform.dal.dao.DalPojo;
 @Table(name = "rz_menu")
 public class RzMenu implements DalPojo {
 
-    /**
-     * ��������
-     */
+
     @Id
 	@Column(name = "id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Type(value = Types.BIGINT)
-	private Long id;
+	@Type(value = Types.INTEGER)
+	private Integer id;
 
     /**
      * �˵�����
@@ -40,11 +38,6 @@ public class RzMenu implements DalPojo {
 	private String menuName;
 
     /**
-     * �˵�Id
-     */
-	@Column(name = "menu_id")
-	@Type(value = Types.VARCHAR)
-	private String menuId;
 
     /**
      * �˵�Url
@@ -52,6 +45,9 @@ public class RzMenu implements DalPojo {
 	@Column(name = "menu_src")
 	@Type(value = Types.VARCHAR)
 	private String menuSrc;
+	@Column(name = "menu_icon")
+	@Type(value = Types.VARCHAR)
+	private String menuIcon;
 
     /**
      * �˵�״̬0 ����,1 ������
@@ -63,9 +59,9 @@ public class RzMenu implements DalPojo {
     /**
      * �ֲ˵�Id
      */
-	@Column(name = "submenu_id")
-	@Type(value = Types.VARCHAR)
-	private String submenuId;
+	@Column(name = "parentmenu_id")
+	@Type(value = Types.INTEGER)
+	private Integer parentmenuId;
 
     /**
      * ����ʱ��
@@ -81,13 +77,6 @@ public class RzMenu implements DalPojo {
 	@Type(value = Types.TIMESTAMP)
 	private Timestamp datachangeLasttime;
 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
 
 	public String getMenuName() {
 		return menuName;
@@ -97,13 +86,7 @@ public class RzMenu implements DalPojo {
 		this.menuName = menuName;
 	}
 
-	public String getMenuId() {
-		return menuId;
-	}
 
-	public void setMenuId(String menuId) {
-		this.menuId = menuId;
-	}
 
 	public String getMenuSrc() {
 		return menuSrc;
@@ -121,13 +104,6 @@ public class RzMenu implements DalPojo {
 		this.menuStatus = menuStatus;
 	}
 
-	public String getSubmenuId() {
-		return submenuId;
-	}
-
-	public void setSubmenuId(String submenuId) {
-		this.submenuId = submenuId;
-	}
 
 	public Timestamp getCreateTime() {
 		return createTime;
@@ -145,4 +121,27 @@ public class RzMenu implements DalPojo {
 		this.datachangeLasttime = datachangeLasttime;
 	}
 
+	public String getMenuIcon() {
+		return menuIcon;
+	}
+
+	public void setMenuIcon(String menuIcon) {
+		this.menuIcon = menuIcon;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Integer getParentmenuId() {
+		return parentmenuId;
+	}
+
+	public void setParentmenuId(Integer parentmenuId) {
+		this.parentmenuId = parentmenuId;
+	}
 }

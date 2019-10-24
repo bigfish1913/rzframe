@@ -13,7 +13,7 @@ public class GlobalExceptionHandler {
     public JsonResult errorResult(RuntimeException ex) {
         JsonResult result = new JsonResult();
         result.setCode(500);
-        result.setMessage("系统出错");
+        result.setMessage(JsonUtils.serializeObject(ex));
         ex.printStackTrace();
         return result;
     }
