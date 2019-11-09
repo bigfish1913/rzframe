@@ -34,9 +34,26 @@ public class RandomUtils {
 		return result;
 	}
 	
+	public static int getNumberInt(int min, int max) {
+		
+		Random random = new Random(System.currentTimeMillis());
+		int result = random.nextInt(max) % (max - min + 1) + min;
+		return result;
+	}
+	
 	public static double getDoubleNumber(int intBit, int pointBit) {
 		
 		return (double) Math.round(Math.random() * intBit * Math.pow(10, pointBit)) / Math.pow(10, pointBit);
 		
+	}
+	public static String getRandomString(int length){
+		String str="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+		Random random=new Random();
+		StringBuffer sb=new StringBuffer();
+		for(int i=0;i<length;i++){
+			int number=random.nextInt(62);
+			sb.append(str.charAt(number));
+		}
+		return sb.toString();
 	}
 }

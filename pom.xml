@@ -15,7 +15,7 @@
         <module>rz-contract</module>
         <module>rz-rzframe</module>
         <module>rz-biz</module>
-        <module>rz-dao</module>
+        <module>rz-lib</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
