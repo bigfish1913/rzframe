@@ -41,6 +41,15 @@ public class RandomUtils {
 		return result;
 	}
 	
+	public static int getNumberInt(String range) {
+		
+		Random random = new Random(System.currentTimeMillis());
+		int min= Integer.parseInt(range.split("-")[0]);
+		int max= Integer.parseInt(range.split("-")[1]);
+		int result = random.nextInt(max) % (max - min + 1) + min;
+		return result;
+	}
+	
 	public static double getDoubleNumber(int intBit, int pointBit) {
 		
 		return (double) Math.round(Math.random() * intBit * Math.pow(10, pointBit)) / Math.pow(10, pointBit);

@@ -42,7 +42,7 @@ public class RzClient implements IRzSerivce {
 	public RzResponse getRzList(RzRequset request) {
 		String apiName = "getRzList";
 		String finalUrl = String.format(remoterUrl, apiName);
-		String result = HttpUtils.httpPost(finalUrl, JsonUtils.toJSONObject(request));
+		String result = "";// HttpUtils.httpPost(finalUrl, JsonUtils.toJSONObject(request));
 		RzResponse response = JsonUtils.toBean(result, RzResponse.class);
 		return response;
 		

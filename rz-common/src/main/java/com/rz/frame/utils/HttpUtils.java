@@ -6,15 +6,16 @@ import org.apache.http.*;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.methods.*;
 
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.CloseableHttpClient;
 
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.client.HttpClients;
 
+import org.apache.http.message.BasicHeader;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.CharArrayBuffer;
 import org.apache.http.util.EntityUtils;
@@ -24,6 +25,7 @@ import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -31,170 +33,82 @@ import java.util.UUID;
 
 public class HttpUtils {
 	
-	/**
-	 * get请求，参数拼接在地址上
-	 *
-	 * @param url 请求地址加参数
-	 * @return 响应
-	 */
-	public static String httpGet(String url) {
-		String result = null;
-		CloseableHttpClient httpClient = HttpClients.createDefault();
-		HttpGet get = new HttpGet(url);
-		CloseableHttpResponse response = null;
+	public String get(HttpGet httpGet) {
+		HttpResponse httpResponse = this.doAction(httpGet, null, null );
+		return entityToString(httpResponse.getEntity());
+	}
+	
+	
+	public String doPost(String url, Map<String, String> paras) {
+		HttpPost httpPost = new HttpPost(url);
+		HttpResponse httpResponse = doPost(httpPost, null, null);
+		return entityToString(httpResponse.getEntity());
+	}
+	
+	public String doPost(String url) {
+		HttpPost httpPost = new HttpPost(url);
+		HttpResponse httpResponse = doPost(httpPost, null, null);
+		return entityToString(httpResponse.getEntity());
+	}
+	
+	public String doPost(HttpPost httpPost) {
+		HttpResponse httpResponse = doPost(httpPost, null, null);
+		return entityToString(httpResponse.getEntity());
+	}
+	
+	public HttpResponse doPostWithResponse(HttpPost httpPost) {
+		return doPost(httpPost, null, null);
+	}
+	
+	public HttpResponse doPost(HttpPost httpPost, Map<String, String> paras,Map<String,String> header) {
 		try {
-			response = httpClient.execute(get);
-			if (response != null && response.getStatusLine().getStatusCode() == 200) {
-				HttpEntity entity = response.getEntity();
-				result = entityToString(entity);
-			}
-			return result;
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				httpClient.close();
-				if (response != null) {
-					response.close();
+			List<NameValuePair> formparams = null;
+			if (paras != null && paras.size() > 0) {
+				formparams = new ArrayList<>();
+				for (Map.Entry<String, String> para : paras.entrySet()) {
+					formparams.add(new BasicNameValuePair(para.getKey(), para.getValue()));
 				}
-			} catch (IOException e) {
-				e.printStackTrace();
+				UrlEncodedFormEntity urlEncodedFormEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
+				httpPost.setEntity(urlEncodedFormEntity);
 			}
+			return this.doAction(httpPost, header, null);
+		} catch (IOException e) {
+			RzLogger.error("请求异常：{},{}", httpPost.getURI(), e.getMessage());
+			return null;
+		}
+	}
+	
+	private HttpResponse doAction(HttpRequestBase httpRequestBase, Map<String, String> header, BasicCookieStore basicCookieStore) {
+		try {
+			if (header != null && header.size() > 0) {
+				for (Map.Entry<String, String> head : header.entrySet()) {
+					httpRequestBase.addHeader(new BasicHeader(head.getKey(), head.getValue()));
+				}
+			}
+			HttpClientBuilder httpClientBuilder = HttpClients.custom();
+			if (basicCookieStore != null) {
+				httpClientBuilder.setDefaultCookieStore(basicCookieStore);
+			}
+			CloseableHttpClient httpClient = httpClientBuilder.build();
+			return httpClient.execute(httpRequestBase);
+			
+		} catch (IOException e) {
+			RzLogger.error("请求异常：{},{}", httpRequestBase.getURI(), e.getMessage());
 		}
 		return null;
 	}
 	
-	/**
-	 * 发送post请求，参数用map接收
-	 *
-	 * @param url 地址
-	 * @param map 参数
-	 * @return 返回值
-	 */
-	public static String httpPost(String url, Map<String, String> map) {
-		String result = null;
-		CloseableHttpClient httpClient = HttpClients.createDefault();
-		HttpPost post = new HttpPost(url);
-		List<NameValuePair> pairs = new ArrayList<NameValuePair>();
-		for (Map.Entry<String, String> entry : map.entrySet()) {
-			pairs.add(new BasicNameValuePair(entry.getKey(), entry.getValue()));
-		}
-		CloseableHttpResponse response = null;
+	private static String entityToString(HttpEntity entity) {
 		try {
-			post.setEntity(new UrlEncodedFormEntity(pairs, "UTF-8"));
-			response = httpClient.execute(post);
-			if (response != null && response.getStatusLine().getStatusCode() == 200) {
-				HttpEntity entity = response.getEntity();
-				result = entityToString(entity);
+			String result = null;
+			if (entity == null) {
+				return null;
 			}
-			return result;
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				httpClient.close();
-				if (response != null) {
-					response.close();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			
-		}
-		return null;
-	}
-	
-	public static String httpPost(String url, JSON json) {
-		String result = null;
-		CloseableHttpClient httpClient = HttpClients.createDefault();
-		HttpPost post = new HttpPost(url);
-		
-		CloseableHttpResponse response = null;
-		try {
-			StringEntity postEntity = new StringEntity(json.toString(), Charset.forName("UTF-8"));
-			postEntity.setContentEncoding("UTF-8");
-			// 发送Json格式的数据请求
-			postEntity.setContentType("application/json");
-			post.setEntity(postEntity);
-			response = httpClient.execute(post);
-			if (response != null && response.getStatusLine().getStatusCode() == 200) {
-				HttpEntity entity = response.getEntity();
-				result = entityToString(entity);
-			}
-			return result;
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				httpClient.close();
-				if (response != null) {
-					response.close();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			
-		}
-		return null;
-	}
-	
-	
-	public static String httpPost(String url, JSON json,int timeOut) {
-		String result = null;
-		CloseableHttpClient httpClient = HttpClients.createDefault();
-		HttpPost post = new HttpPost(url);
-		
-		CloseableHttpResponse response = null;
-		try {
-			StringEntity postEntity = new StringEntity(json.toString(), Charset.forName("UTF-8"));
-			postEntity.setContentEncoding("UTF-8");
-			// 发送Json格式的数据请求
-			postEntity.setContentType("application/json");
-			post.setEntity(postEntity);
-			
-			response = httpClient.execute(post);
-			if (response != null && response.getStatusLine().getStatusCode() == 200) {
-				HttpEntity entity = response.getEntity();
-				result = entityToString(entity);
-			}
-			return result;
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				httpClient.close();
-				if (response != null) {
-					response.close();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			
-		}
-		return null;
-	}
-	
-	
-	private static String entityToString(HttpEntity entity) throws IOException {
-		String result = null;
-		if (entity != null) {
 			long lenth = entity.getContentLength();
 			if (lenth != -1 && lenth < 2048) {
-				result = EntityUtils.toString(entity, "UTF-8");
+				result = EntityUtils.toString(entity, StandardCharsets.UTF_8);
 			} else {
-				InputStreamReader reader1 = new InputStreamReader(entity.getContent(), "UTF-8");
+				InputStreamReader reader1 = new InputStreamReader(entity.getContent(), StandardCharsets.UTF_8);
 				CharArrayBuffer buffer = new CharArrayBuffer(2048);
 				char[] tmp = new char[1024];
 				int l;
@@ -203,11 +117,14 @@ public class HttpUtils {
 				}
 				result = buffer.toString();
 			}
+			return result;
+		} catch (Exception ex) {
+			RzLogger.error("转换失败", ex);
+			return "";
 		}
-		return result;
+		
 	}
 	
-	// 构建唯一会话Id
 	public static String getSessionId() {
 		UUID uuid = UUID.randomUUID();
 		String str = uuid.toString();

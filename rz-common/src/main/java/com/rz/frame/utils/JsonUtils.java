@@ -1,6 +1,7 @@
 package com.rz.frame.utils;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.JSONLibDataFormatSerializer;
 import com.alibaba.fastjson.serializer.PropertyFilter;
 import com.alibaba.fastjson.serializer.SerializeConfig;
@@ -78,8 +79,8 @@ public class JsonUtils {
 	 * @param jsonBody
 	 * @return
 	 */
-	public static Object toBean(String jsonBody) {
-		return JSON.parse(jsonBody);
+	public static JSONObject toBean(String jsonBody) {
+		return (JSONObject)JSON.parse(jsonBody);
 	}
 	
 	/**

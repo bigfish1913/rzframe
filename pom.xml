@@ -16,6 +16,8 @@
         <module>rz-rzframe</module>
         <module>rz-biz</module>
         <module>rz-lib</module>
+        <module>rz-servlet</module>
+        <module>rz-grabticket</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
