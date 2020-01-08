@@ -12,7 +12,6 @@
         <module name="rz-contract" />
         <module name="rz-dal" />
         <module name="rz-doc" />
-        <module name="rz-grabticket" />
         <module name="rz-lib" />
         <module name="rz-rzframe" />
         <module name="rz-service" />
@@ -21,6 +20,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="rz-dao" target="1.7" />
+      <module name="rz-grabticket" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

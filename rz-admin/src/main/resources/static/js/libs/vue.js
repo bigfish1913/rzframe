@@ -462,7 +462,7 @@
     mustUseProp: no,
 
     /**
-     * Perform updates asynchronously. Intended to be used by Vue Test Utils
+     * Perform updates asynchronously. Intended to be used by Vue Test utils
      * This will significantly reduce performance if set to false.
      */
     async: true,

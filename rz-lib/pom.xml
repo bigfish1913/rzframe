@@ -75,6 +75,15 @@
             <version>8.0.16</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-transport</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-codec</artifactId>
+            <version>4.1.36.Final</version>
+        </dependency>
     </dependencies>
 
     <build>

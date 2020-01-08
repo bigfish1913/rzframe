@@ -32,11 +32,12 @@ import static com.rz.frame.utils.GlobalConstant.QueryUrl.queryUrl;
 
 public class S12306 {
 	public static void main(String[] args) throws IOException {
-		HttpTicketUtils httpTicketUtils = HttpTicketUtils.getHttpClient("13661862134");
-		String queryResult = httpTicketUtils.doGet(String.format(queryUrl,"2020-01-18", "SHH", "IMH"));
-		JSONObject jsonObject = JsonUtils.toBean(queryResult);
-		
-		System.out.println(queryResult);
+//		HttpTicketUtils httpTicketUtils = HttpTicketUtils.getHttpClient("13661862134");
+//		String queryResult = httpTicketUtils.doGet(String.format(queryUrl,"2020-01-18", "SHH", "IMH"));
+//		JSONObject jsonObject = JsonUtils.toBean(queryResult);
+//
+//		System.out.println(queryResult);
+		RzLogger.info("1. 检测登录结果：{}", 12);
 		
 	}
 	
