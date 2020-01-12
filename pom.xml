@@ -18,6 +18,7 @@
         <module>rz-lib</module>
         <module>rz-servlet</module>
         <module>rz-grabticket</module>
+        <module>rz-remoting</module>
     </modules>
     <packaging>pom</packaging>
     <properties>

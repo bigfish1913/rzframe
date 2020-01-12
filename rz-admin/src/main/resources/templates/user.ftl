@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<header>
     <meta charset="UTF-8">
     <title>RZ</title>
     <link href="/css/demo_page.css" rel="stylesheet">
@@ -11,7 +11,7 @@
 
 
 
-</head>
+</header>
 <body>
 
 <section id="container">

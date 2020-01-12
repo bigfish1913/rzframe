@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<header lang="en">
     <meta charset="UTF-8"/>
     <title></title>
-</head>
+</header>
 <body>
 作者信息：
 <div>作者：${resource.name}</div>

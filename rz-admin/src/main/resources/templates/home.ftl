@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<header>
     <meta charset="UTF-8">
     <title>RZ</title>
     <#include "utils/cssheader.ftl"/>
-</head>
+</header>
 <body>
 
 <section id="container">

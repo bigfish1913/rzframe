@@ -13,6 +13,7 @@
         <module name="rz-dal" />
         <module name="rz-doc" />
         <module name="rz-lib" />
+        <module name="rz-remoting" />
         <module name="rz-rzframe" />
         <module name="rz-service" />
         <module name="rz-servlet" />
