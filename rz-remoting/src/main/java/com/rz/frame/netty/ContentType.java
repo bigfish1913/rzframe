@@ -4,16 +4,16 @@ public enum ContentType {
 	Default((byte) 0),
 	File((byte) 1),
 	Other((byte) 2);
-	private int code;
-	ContentType(int code) {
+	private byte code;
+	ContentType(byte code) {
 		this.code = code;
 	}
 	
-	public int getValue() {
+	public byte getValue() {
 		return code;
 	}
 	
-	public static ContentType getMessageType(String typeName){
+	public static ContentType getContentType(String typeName){
 		for (ContentType mt :ContentType.values()) {
 			if(mt.toString().equals(typeName.trim())){
 				return mt;

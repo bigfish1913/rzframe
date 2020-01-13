@@ -1,10 +1,10 @@
 package com.rz.frame.netty;
 
+import com.rz.frame.utils.StringUtils;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
 
-import java.text.SimpleDateFormat;
 
 public class RzEncoder extends MessageToByteEncoder<Message> {
 	@Override
@@ -14,7 +14,6 @@ public class RzEncoder extends MessageToByteEncoder<Message> {
 		out.writeInt(msg.getHeader().getHeadData());
 		// 写入包的的长度
 		out.writeInt(msg.getContent().length);
-		byte[] tokenByte = new byte[50];
 		/**
 		 * token定长50个字节
 		 *  第一个参数 原数组
@@ -24,36 +23,45 @@ public class RzEncoder extends MessageToByteEncoder<Message> {
 		 *  第五个参数 copy多少个长度
 		 */
 		byte[] indexByte = msg.getHeader().getToken().getBytes();
-		System.arraycopy(indexByte, 0, tokenByte, 0, indexByte.length > tokenByte.length ? tokenByte.length : indexByte.length);
+		writeByte(out, indexByte, 50);
 		
 		
-		byte[] createTimeByte = new byte[50];
-		indexByte = msg.getHeader().getCreateDate().toString().getBytes();
-		System.arraycopy(indexByte, 0, createTimeByte, 0, indexByte.length > createTimeByte.length ? createTimeByte.length : indexByte.length);
+		byte[] createTimeByte = msg.getHeader().getCreateDate().toString().getBytes();
+		writeByte(out, createTimeByte, 50);
 		
-		byte[] idByte = new byte[50];
-		indexByte = msg.getHeader().getMessageId().getBytes();
-		System.arraycopy(indexByte, 0, idByte, 0, indexByte.length > idByte.length ? idByte.length : indexByte.length);
+		byte[] idByte = msg.getHeader().getMessageId().getBytes();
+		writeByte(out, idByte, 50);
 		
-		byte[] msgType = new byte[50];
-		indexByte = msg.getHeader().getMessageType().toString().getBytes();
-		System.arraycopy(indexByte, 0, msgType, 0, indexByte.length > msgType.length ? msgType.length : indexByte.length);
- 
-		//写入令牌
-		out.writeBytes(tokenByte);
-		//写入令牌生成时间
-		out.writeBytes(createTimeByte);
-		//写入令牌
-		out.writeBytes(idByte);
-		//写入令牌生成时间
+		byte[] msgType = new byte[]{msg.getHeader().getMessageType().getValue()};
 		out.writeBytes(msgType);
-		// 写入消息主体
+		byte[] contentType = new byte[]{msg.getHeader().getContentType().getValue()};
+		out.writeBytes(contentType);
+		
+		writeByte(out, msg.getHeader().getFileName(), 50);
+		
 		out.writeBytes(msg.getContent());
-		//map的存储是key为10个字节，value是50个字节
-//		if (msg.getHeader().getMessageProperties() != null && !msg.getHeader().getMessageProperties().isEmpty()) {
-//
-//		}
+		
 	}
 	
+	private void writeByte(ByteBuf out, byte[] bytes, int length) {
+		byte[] writeArr = new byte[length];
+		/**
+		 *
+		 *  第一个参数 原数组
+		 *  第二个参数 原数组位置
+		 *  第三个参数 目标数组
+		 *  第四个参数 目标数组位置
+		 *  第五个参数 copy多少个长度
+		 */
+		System.arraycopy(bytes, 0, writeArr, 0, bytes.length > writeArr.length ? writeArr.length : bytes.length);
+		out.writeBytes(writeArr);
+	}
+	
+	private void writeByte(ByteBuf out, String content, int length) {
+		if (StringUtils.isEmpty(content)) {
+			content = "";
+		}
+		writeByte(out, content.getBytes(), length);
+	}
 	
 }

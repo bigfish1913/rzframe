@@ -1,8 +1,6 @@
 package com.rz.frame.netty.handler;
 
-import com.rz.frame.netty.Message;
-import com.rz.frame.netty.MessageGenerater;
-import com.rz.frame.netty.MessageType;
+import com.rz.frame.netty.*;
 import com.rz.frame.utils.RzLogger;
 
 import io.netty.channel.ChannelHandler;
@@ -11,19 +9,28 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 
+import java.net.SocketAddress;
+
 @ChannelHandler.Sharable
 public class ClientHandler extends SimpleChannelInboundHandler<Message> {
+	
+	@Override
+	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+		RzLogger.info("服务器断开");
+		SocketAddress socketAddress = ctx.channel().remoteAddress();
+		String ipAndPort=socketAddress.toString().replace("/","");
+		String ip=ipAndPort.split(":")[0];
+		int port=Integer.parseInt(ipAndPort.split(":")[1]);
+		NettyClient nettyClient = NettyManager.getInstance().getNettyClient(ip, port);
+		nettyClient.close();
+		nettyClient.reconnect();
+	}
 	
 	//发现服务端
 	@Override
 	public void channelActive(ChannelHandlerContext ctx) {
 		RzLogger.info("服务器连接已激活");
-		Message message = MessageGenerater.getMessage("发现服务端");
-		System.out.println("NettyClient|: channelActive 发送消息：" + message.toString());
-		ctx.writeAndFlush(message);
-		
 	}
-	
 	@Override
 	public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
 		if (evt instanceof IdleStateEvent) {
@@ -44,9 +51,9 @@ public class ClientHandler extends SimpleChannelInboundHandler<Message> {
 	
 	@Override
 	protected void channelRead0(ChannelHandlerContext channelHandlerContext, Message message) {
-		RzLogger.info("收到服务端信息：" + message.getStrContent());
+	 
 		if (message.getHeader().getMessageType().equals(MessageType.HEARTBEAT_RESP)) {
-			//			Clogger.info("收到心跳返回信息：" + message.toString());
+			RzLogger.info("心跳响应：" + message.getStrContent());
 		}
 		if (message.getHeader().getMessageType().equals(MessageType.SERVICE_REQ)) {
 			RzLogger.info("收到服务端信息：" + message.getStrContent());

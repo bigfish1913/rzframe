@@ -5,6 +5,7 @@ public interface HeartConstant {
 		public final static int LENGTH_FIELD = 10;
 		public final static int DEFAULT_MAGIC_START_CODE = 0xdec1_0ade;
 		public final static int DEFAULT_MAGIC_END_CODE = 0xdec1_0ade;
+		public final static String HeartMessage = "OK";
 	}
 	
 	public interface Address {

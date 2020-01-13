@@ -8,13 +8,13 @@ public enum MessageType {
     LOGIN_RESP((byte) 4), /*登录响应消息*/
     HEARTBEAT_REQ((byte) 5), /*心跳请求消息*/
     HEARTBEAT_RESP((byte) 6);/*心跳应答消息*/
-    private int code;
+    private byte code;
 
-    MessageType(int code) {
+    MessageType(byte code) {
         this.code = code;
     }
     
-    public int getValue() {
+    public byte getValue() {
         return code;
     }
 

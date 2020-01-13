@@ -10,14 +10,17 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 
+import static com.rz.frame.netty.HeartConstant.RemotingHeader.HeartMessage;
+
 public class ServerHandler extends SimpleChannelInboundHandler<Message> {
 	@Override
 	protected void channelRead0(ChannelHandlerContext channelHandlerContext, Message message) {
-		RzLogger.info("收到客户端消息：" + message.getStrContent());
+		
 		
 		if (message.getHeader().getMessageType().equals(MessageType.HEARTBEAT_REQ)) {
-			message.getHeader().setMessageType(MessageType.HEARTBEAT_RESP);
-			channelHandlerContext.writeAndFlush(message);
+			RzLogger.info("收到心跳请求：" + message.getStrContent());
+			Message heartMessage = MessageGenerater.generaterHeartMessage(HeartMessage, MessageType.HEARTBEAT_RESP);
+			channelHandlerContext.writeAndFlush(heartMessage);
 		}
 		if (message.getHeader().getMessageType().equals(MessageType.SERVICE_RESP)) {
 			RzLogger.info("确认收到消息");
@@ -35,7 +38,7 @@ public class ServerHandler extends SimpleChannelInboundHandler<Message> {
 	@Override
 	public void channelActive(ChannelHandlerContext ctx) {
 		RzLogger.info("客户端：" + ctx.channel().remoteAddress() + "连接成功！");
-		Message message = MessageGenerater.getMessage("发送测试消息");
+		Message message = MessageGenerater.generaterMessage("发送测试消息");
 		ctx.writeAndFlush(message);
 		ctx.fireChannelActive();
 	}

@@ -14,10 +14,12 @@ import io.netty.handler.timeout.IdleStateHandler;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import static com.rz.frame.netty.HeartConstant.Config.READ_TIME_OUT;
 import static com.rz.frame.netty.HeartConstant.Config.WRITE_TIME_OUT;
+import static com.rz.frame.netty.HeartConstant.RemotingHeader.HeartMessage;
 
 
 public class NettyClient {
@@ -26,8 +28,6 @@ public class NettyClient {
 	private final int Port;
 	private CountDownLatch countDownLatch;
 	private ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
-	/*是否用户主动关闭连接的标志值*/
-	private AtomicBoolean userClose = new AtomicBoolean(false);
 	/*连接是否成功关闭的标志值*/
 	private AtomicBoolean connected = new AtomicBoolean(false);
 	EventLoopGroup group = new NioEventLoopGroup();
@@ -47,6 +47,7 @@ public class NettyClient {
 	public NettyClient connect() {
 		
 		try {
+			RzLogger.info("尝试连接服务器");
 			Bootstrap b = new Bootstrap();
 			b.group(group).channel(NioSocketChannel.class).option(ChannelOption.TCP_NODELAY, true).handler(new ChannelInitializer<SocketChannel>() {
 				@Override
@@ -61,33 +62,49 @@ public class NettyClient {
 			ChannelFuture future = b.connect(IP, Port).sync();
 			channel = future.channel();
 			connected.set(true);
+			
+		} catch (Exception e) {
+			RzLogger.error("connect", e.getMessage());
+		} finally {
 			countDownLatch.countDown();
-		} catch (InterruptedException e) {
-		
 		}
 		return this;
 	}
 	
-	public void sendMessage(Message message) throws Exception {
-		if (channel == null || !connected.get()) {
-			throw new Exception("尚未连接成功");
-		}
-		channel.writeAndFlush(message);
-	}
-	
 	public void reconnect() {
-		if (!userClose.get()) {
-			executor.submit(this::connect);
+		
+		while (!connected.get())
+		{
+			RzLogger.info("异常断开，尝试重连");
+			connect();
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
+		
 	}
 	
-	public void sendMessage(String msg) throws Exception {
+	public void sendMessage(String msg, MessageType messageType, ContentType contentType) throws Exception {
 		if (channel == null || !connected.get()) {
 			throw new Exception("尚未连接成功");
 		}
-		Message message = MessageGenerater.getMessage(msg);
-		RzLogger.info("发送消息到服务端：" + message);
+		Message message = MessageGenerater.generaterMessage(msg, messageType, contentType);
+		//		RzLogger.info("发送消息到服务端：" + message);
 		channel.writeAndFlush(message);
+	}
+	
+	public void sendMessage(String msg, MessageType messageType) throws Exception {
+		sendMessage(msg, messageType, ContentType.Default);
+	}
+	
+	public void sendHeartBeatRequest() throws Exception {
+		sendMessage(HeartMessage, MessageType.HEARTBEAT_REQ, ContentType.Default);
+	}
+	
+	public void sendHeartBeatResponse() throws Exception {
+		sendMessage(HeartMessage, MessageType.HEARTBEAT_RESP, ContentType.Default);
 	}
 	
 	public AtomicBoolean getConnected() {
@@ -98,21 +115,20 @@ public class NettyClient {
 		this.connected = connected;
 	}
 	
-	public void waitConnect() throws Exception {
+	public NettyClient waitConnect() throws Exception {
 		if (this.countDownLatch == null) {
 			throw new Exception("尚未初始化countDownLatch");
 		}
 		this.countDownLatch.await();
+		if (channel == null || !connected.get()) {
+			throw new Exception("尚未连接成功");
+		}
+		return this;
 	}
 	
 	public void close() {
-		RzLogger.info("连接服务器异常，尝试重新连接");
-		userClose.set(true);
 		connected.set(false);
 		channel.close();
-		
 		group.shutdownGracefully();
-		
-		
 	}
 }

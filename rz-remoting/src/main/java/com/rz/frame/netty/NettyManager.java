@@ -1,5 +1,7 @@
 package com.rz.frame.netty;
 
+import com.rz.frame.utils.RzLogger;
+
 import java.util.concurrent.ConcurrentHashMap;
 
 public class NettyManager {
@@ -15,7 +17,7 @@ public class NettyManager {
 	}
 	
 	public NettyClient getNettyClient(String ip, int port) {
-		String ipAndPort = ip.concat(String.valueOf(port));
+		String ipAndPort = ip.concat(":").concat(String.valueOf(port));
 		if (NettyClientContainer.containsKey(ipAndPort)) {
 			NettyClient nettyClient = NettyClientContainer.get(ipAndPort);
 			if (!nettyClient.getConnected().get()) {
@@ -23,14 +25,14 @@ public class NettyManager {
 			}
 			return nettyClient;
 		}
-		NettyClient newNettyClient = new NettyClient(ip, port);
+		NettyClient newNettyClient = null;
 		try {
+			newNettyClient = new NettyClient(ip, port);
 			newNettyClient.connect().waitConnect();
-	 
+			NettyClientContainer.put(ipAndPort, newNettyClient);
 		} catch (Exception e) {
-			e.printStackTrace();
+			RzLogger.error("创建NettyClient失败");
 		}
-		 NettyClientContainer.put(ipAndPort, newNettyClient);
 		return newNettyClient;
 	}
 }
