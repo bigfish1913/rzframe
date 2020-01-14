@@ -39,6 +39,19 @@ public class MessageGenerater {
 		return message;
 	}
 	
+	public static Message generaterMessage(byte[] bts, MessageType messageType, ContentType contentType) {
+		MessageHead head = new MessageHead();
+		head.setCreateDate(LocalDateTime.now());
+		head.setLength(bts.length);
+		head.setMessageId(getNext());
+		head.setMessageType(messageType);
+		head.setContentType(contentType);
+		Message message = new Message(head, bts);
+		message.getHeader().setToken(message.buidToken());
+		message.setContent(bts);
+		return message;
+	}
+	
 	
 	public static Message generaterHeartMessage(String cnt, MessageType messageType) {
 		return generaterMessage(cnt, messageType, ContentType.Default);

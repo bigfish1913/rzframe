@@ -13,7 +13,7 @@ public class MessageHead {
     private String messageId;
     private MessageType messageType;
     private ContentType  contentType;
-    private String fileName;
+   
 //    private Map<String,String> messageProperties;
 
     public int getHeadData() {
@@ -73,22 +73,9 @@ public class MessageHead {
         this.contentType = contentType;
     }
     
-//    public Map<String, String> getMessageProperties() {
-//        return messageProperties;
-//    }
-//
-//    public void setMessageProperties(Map<String, String> messagePropertys) {
-//        this.messageProperties = messagePropertys;
-//    }
+ 
 	
-	
-	public String getFileName() {
-		return fileName;
-	}
-	
-	public void setFileName(String fileName) {
-		this.fileName = fileName;
-	}
+ 
 	
 	@Override
     public String toString() {

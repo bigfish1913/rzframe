@@ -1,11 +1,7 @@
 package com.rz.frame.netty;
 
 
-import com.rz.frame.netty.ContentType;
-import com.rz.frame.netty.Message;
-import com.rz.frame.netty.MessageHead;
-import com.rz.frame.netty.MessageType;
-import com.rz.frame.utils.RzLogger;
+
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;
@@ -17,7 +13,7 @@ import static com.rz.frame.netty.HeartConstant.RemotingHeader.DEFAULT_MAGIC_STAR
 
 
 public class RzDecoder extends ByteToMessageDecoder {
-	private int BASE_LENGTH = 4 + 4 + 50 + 50 + 50 + 1 + 1 + 50;//协议头 类型 int+length 4个字节+令牌和 令牌生成时间50个字节
+	private int BASE_LENGTH = 4 + 4 + 50 + 50 + 50 + 1 +1 ;//协议头 类型 int+length 4个字节+令牌和 令牌生成时间50个字节
 	private int headData = DEFAULT_MAGIC_START_CODE;//协议开始标志
 	
 	@Override
@@ -28,7 +24,7 @@ public class RzDecoder extends ByteToMessageDecoder {
 			 * 粘包 发送频繁 可能多次发送黏在一起 需要考虑  不过一个客户端发送太频繁也可以推断是否是攻击
 			 */
 			//防止soket流攻击。客户端传过来的数据太大不合理
-			if (buffer.readableBytes() > 2048) {
+			if (buffer.readableBytes() > 1024*1024*10) {
 				buffer.skipBytes(buffer.readableBytes());
 				
 			}
@@ -76,12 +72,7 @@ public class RzDecoder extends ByteToMessageDecoder {
 		byte[] contentTypeByte = new byte[1];
 		buffer.readBytes(contentTypeByte);
 		ContentType contentType = ContentType.values()[contentTypeByte[0]];
-		//读取文件名
-		byte[] fileByte = new byte[50];
-		buffer.readBytes(fileByte);
-		String fileName = new String(fileByte);
-		
-		
+
 		//读取content
 		byte[] data = new byte[length];
 		buffer.readBytes(data);
@@ -90,11 +81,9 @@ public class RzDecoder extends ByteToMessageDecoder {
 		head.setToken(new String(tokenByte).trim());
 		head.setCreateDate(LocalDateTime.parse(new String(createDateByte).trim()));
 		head.setLength(length);
-		
 		head.setMessageId(new String(messageIdByte).trim());
 		head.setMessageType(MessageType.values()[messageTypeByte[0]]);
 		head.setContentType(contentType);
-		head.setFileName(fileName);
 		Message message = new Message(head, data);
 		//认证不通过
 		if (!message.authorization(message.buidToken())) {

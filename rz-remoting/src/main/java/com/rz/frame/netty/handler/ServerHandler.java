@@ -1,9 +1,6 @@
 package com.rz.frame.netty.handler;
 
-import com.rz.frame.netty.Message;
-import com.rz.frame.netty.MessageGenerater;
-import com.rz.frame.netty.MessageHead;
-import com.rz.frame.netty.MessageType;
+import com.rz.frame.netty.*;
 import com.rz.frame.utils.RzLogger;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -16,21 +13,22 @@ public class ServerHandler extends SimpleChannelInboundHandler<Message> {
 	@Override
 	protected void channelRead0(ChannelHandlerContext channelHandlerContext, Message message) {
 		
-		
 		if (message.getHeader().getMessageType().equals(MessageType.HEARTBEAT_REQ)) {
 			RzLogger.info("收到心跳请求：" + message.getStrContent());
 			Message heartMessage = MessageGenerater.generaterHeartMessage(HeartMessage, MessageType.HEARTBEAT_RESP);
 			channelHandlerContext.writeAndFlush(heartMessage);
 		}
-		if (message.getHeader().getMessageType().equals(MessageType.SERVICE_RESP)) {
-			RzLogger.info("确认收到消息");
+		if (message.getHeader().getMessageType().equals(MessageType.SERVICE_REQ)) {
+			if (message.getHeader().getContentType().equals(ContentType.File)) {
+				FileUtils.saveFile(message.getContent(), "D:\\1.png");
+			}
 		}
 		
-		if (message.getHeader().getMessageType().equals(MessageType.SERVICE_REQ)) {
-			RzLogger.info("收到服务端信息：" + message.getStrContent());
-			message.getHeader().setMessageType(MessageType.SERVICE_RESP);
-			channelHandlerContext.writeAndFlush(message);
-		}
+//		if (message.getHeader().getMessageType().equals(MessageType.SERVICE_REQ)) {
+//			RzLogger.info("收到服务端信息：" + message.getStrContent());
+//			message.getHeader().setMessageType(MessageType.SERVICE_RESP);
+//			channelHandlerContext.writeAndFlush(message);
+//		}
 		
 		
 	}

@@ -36,8 +36,7 @@ public class RzEncoder extends MessageToByteEncoder<Message> {
 		out.writeBytes(msgType);
 		byte[] contentType = new byte[]{msg.getHeader().getContentType().getValue()};
 		out.writeBytes(contentType);
-		
-		writeByte(out, msg.getHeader().getFileName(), 50);
+	 
 		
 		out.writeBytes(msg.getContent());
 		

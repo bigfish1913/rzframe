@@ -73,8 +73,7 @@ public class NettyClient {
 	
 	public void reconnect() {
 		
-		while (!connected.get())
-		{
+		while (!connected.get()) {
 			RzLogger.info("异常断开，尝试重连");
 			connect();
 			try {
@@ -97,6 +96,15 @@ public class NettyClient {
 	
 	public void sendMessage(String msg, MessageType messageType) throws Exception {
 		sendMessage(msg, messageType, ContentType.Default);
+	}
+	
+	public void sendPicMessage(byte[] byteArr) throws Exception {
+		if (channel == null || !connected.get()) {
+			throw new Exception("尚未连接成功");
+		}
+		Message message = MessageGenerater.generaterMessage(byteArr, MessageType.SERVICE_REQ, ContentType.File);
+		//		RzLogger.info("发送消息到服务端：" + message);
+		channel.writeAndFlush(message);
 	}
 	
 	public void sendHeartBeatRequest() throws Exception {
