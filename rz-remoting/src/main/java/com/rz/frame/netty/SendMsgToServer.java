@@ -16,7 +16,6 @@ public class SendMsgToServer {
 		int port = 9098;
 		NettyClient nettyClient = NettyManager.getInstance().getNettyClient(ip, port);
 		try {
- 
 			executor.scheduleAtFixedRate(()-> {
 				try {
 					Rectangle screenRect = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());

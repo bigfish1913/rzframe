@@ -13,22 +13,13 @@ public class FileChannelWrite {
 		RandomAccessFile randomAccessTargetFile;
 		try {
 			randomAccessTargetFile = new RandomAccessFile(file, "rw");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-			return;
-		}
-		
-		FileChannel targetFileChannel = randomAccessTargetFile.getChannel();
-		try {
-			
-			MappedByteBuffer map = targetFileChannel.map(FileChannel.MapMode.READ_WRITE, 0, 2 * 1024*1024);
+			FileChannel targetFileChannel = randomAccessTargetFile.getChannel();
+			MappedByteBuffer map = targetFileChannel.map(FileChannel.MapMode.READ_WRITE, 0, 2 * 1024 * 1024);
 			int position = map.capacity();
 			System.out.println(position);
-			
-			
 		} catch (IOException e) {
 			e.printStackTrace();
-		}  finally {
+		} finally {
 			file.deleteOnExit();
 		}
 	}

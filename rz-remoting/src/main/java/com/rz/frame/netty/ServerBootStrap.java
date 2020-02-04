@@ -6,9 +6,9 @@ import java.util.concurrent.CountDownLatch;
 
 public class ServerBootStrap {
 	public static void main(String[] args) {
-		CountDownLatch countDownLatch=new CountDownLatch(1);
-		NettyServer nettyServer = new NettyServer("127.0.0.1",9098,countDownLatch);
-		Thread thread=new Thread(nettyServer::startServer);
+		CountDownLatch countDownLatch = new CountDownLatch(1);
+		NettyServer nettyServer = new NettyServer("127.0.0.1", 9098, countDownLatch);
+		Thread thread = new Thread(nettyServer::startServer);
 		thread.start();
 		try {
 			countDownLatch.await();
