@@ -16,9 +16,9 @@ public class RzConfig08 {
 	 * 创建一个Eal的类的FacrotyBean,注入的Eal的对象的实例是经过工厂处理的
 	 * @return
 	 */
-//	@Bean
-//	public RzFactoryBean getRzFactoryBean() {
-//		return new RzFactoryBean();
-//	}
+	@Bean
+	public RzFactoryBean getRzFactoryBean() {
+		return new RzFactoryBean();
+	}
 	
 }

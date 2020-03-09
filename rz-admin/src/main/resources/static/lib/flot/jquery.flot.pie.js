@@ -10,36 +10,36 @@ internally calculates the total and percentages.
 * Updated November 2009 with contributions from: btburnett3, Anthony Aragues and Xavi Ivars
 
 * Changes:
-	2009-10-22: lineJoin set to round
-	2009-10-23: IE full circle fix, donut
-	2009-11-11: Added basic hover from btburnett3 - does not work in IE, and center is off in Chrome and Opera
-	2009-11-17: Added IE hover capability submitted by Anthony Aragues
-	2009-11-18: Added bug fix submitted by Xavi Ivars (issues with arrays when other JS libraries are included as well)
-		
+ 2009-10-22: lineJoin set to round
+ 2009-10-23: IE full circle fix, donut
+ 2009-11-11: Added basic hover from btburnett3 - does not work in IE, and center is off in Chrome and Opera
+ 2009-11-17: Added IE hover capability submitted by Anthony Aragues
+ 2009-11-18: Added bug fix submitted by Xavi Ivars (issues with arrays when other JS libraries are included as well)
+
 
 Available options are:
 series: {
-	pie: {
-		show: true/false
-		radius: 0-1 for percentage of fullsize, or a specified pixel length, or 'auto'
-		innerRadius: 0-1 for percentage of fullsize or a specified pixel length, for creating a donut effect
-		startAngle: 0-2 factor of PI used for starting angle (in radians) i.e 3/2 starts at the top, 0 and 2 have the same result
-		tilt: 0-1 for percentage to tilt the pie, where 1 is no tilt, and 0 is completely flat (nothing will show)
-		offset: {
-			top: integer value to move the pie up or down
-			left: integer value to move the pie left or right, or 'auto'
-		},
-		stroke: {
-			color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#FFF')
-			width: integer pixel width of the stroke
-		},
-		label: {
-			show: true/false, or 'auto'
-			formatter:  a user-defined function that modifies the text/style of the label text
-			radius: 0-1 for percentage of fullsize, or a specified pixel length
-			background: {
-				color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#000')
-				opacity: 0-1
+ pie: {
+  show: true/false
+  radius: 0-1 for percentage of fullsize, or a specified pixel length, or 'auto'
+  innerRadius: 0-1 for percentage of fullsize or a specified pixel length, for creating a donut effect
+  startAngle: 0-2 factor of PI used for starting angle (in radians) i.e 3/2 starts at the top, 0 and 2 have the same result
+  tilt: 0-1 for percentage to tilt the pie, where 1 is no tilt, and 0 is completely flat (nothing will show)
+  offset: {
+   top: integer value to move the pie up or down
+   left: integer value to move the pie left or right, or 'auto'
+  },
+  stroke: {
+   color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#FFF')
+   width: integer pixel width of the stroke
+  },
+  label: {
+   show: true/false, or 'auto'
+   formatter:  a user-defined function that modifies the text/style of the label text
+   radius: 0-1 for percentage of fullsize, or a specified pixel length
+   background: {
+    color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#000')
+ 			opacity: 0-1
 			},
 			threshold: 0-1 for the percentage value at which to hide labels (if they're too small)
 		},

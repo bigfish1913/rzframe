@@ -13,7 +13,7 @@ public class SpringMain08 {
 		}
 		
 		Eal eal = configApplicationContext.getBean(Eal.class);
-//		RzFactoryBean rzFactoryBean = configApplicationContext.getBean(RzFactoryBean.class);
+ 		RzFactoryBean rzFactoryBean = configApplicationContext.getBean(RzFactoryBean.class);
 		
 		try {
 			System.out.println(eal);

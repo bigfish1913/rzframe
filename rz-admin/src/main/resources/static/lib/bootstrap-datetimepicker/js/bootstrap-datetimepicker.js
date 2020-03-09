@@ -24,53 +24,53 @@
 
 !function( $ ) {
 
-	function UTCDate(){
-		return new Date(Date.UTC.apply(Date, arguments));
-	}
-	function UTCToday(){
-		var today = new Date();
-		return UTCDate(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours(), today.getUTCMinutes(), today.getUTCSeconds(), 0);
-	}
+ function UTCDate(){
+  return new Date(Date.UTC.apply(Date, arguments));
+ }
+ function UTCToday(){
+  var today = new Date();
+  return UTCDate(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours(), today.getUTCMinutes(), today.getUTCSeconds(), 0);
+ }
 
-	// Picker object
+ // Picker object
 
-	var Datetimepicker = function(element, options) {
-		var that = this;
+ var Datetimepicker = function(element, options) {
+  var that = this;
 
-		this.element = $(element);
-		this.language = options.language || this.element.data('date-language') || "en";
-		this.language = this.language in dates ? this.language : "en";
-		this.isRTL = dates[this.language].rtl || ($('body').css("direction") == 'rtl');
-		this.formatType = options.formatType || this.element.data('format-type') || 'standard';
-		this.format = DPGlobal.parseFormat(options.format || this.element.data('date-format') || dates[this.language].format || DPGlobal.getDefaultFormat(this.formatType, 'input'), this.formatType);
-		this.isInline = false;
-		this.isVisible = false;
-		this.isInput = this.element.is('input');
-		this.component = this.element.is('.date') ? this.element.find('.date-set').parent() : false;
-		this.componentReset = this.element.is('.date') ? this.element.find('.date-reset').parent() : false;
-		this.hasInput = this.component && this.element.find('input').length;
-		if (this.component && this.component.length === 0) {
-			this.component = false;
-		}
-		this.linkField = options.linkField || this.element.data('link-field') || false;
-		this.linkFormat = DPGlobal.parseFormat(options.linkFormat || this.element.data('link-format') || DPGlobal.getDefaultFormat(this.formatType, 'link'), this.formatType);
-		this.minuteStep = options.minuteStep || this.element.data('minute-step') || 5;
-		this.pickerPosition = options.pickerPosition || this.element.data('picker-position') || 'bottom-right';
-				this.showMeridian = options.showMeridian || this.element.data('show-meridian') || false;
-				this.initialDate = options.initialDate || new Date();
+  this.element = $(element);
+  this.language = options.language || this.element.data('date-language') || "en";
+  this.language = this.language in dates ? this.language : "en";
+  this.isRTL = dates[this.language].rtl || ($('body').css("direction") == 'rtl');
+  this.formatType = options.formatType || this.element.data('format-type') || 'standard';
+  this.format = DPGlobal.parseFormat(options.format || this.element.data('date-format') || dates[this.language].format || DPGlobal.getDefaultFormat(this.formatType, 'input'), this.formatType);
+  this.isInline = false;
+  this.isVisible = false;
+  this.isInput = this.element.is('input');
+  this.component = this.element.is('.date') ? this.element.find('.date-set').parent() : false;
+  this.componentReset = this.element.is('.date') ? this.element.find('.date-reset').parent() : false;
+  this.hasInput = this.component && this.element.find('input').length;
+  if (this.component && this.component.length === 0) {
+   this.component = false;
+  }
+  this.linkField = options.linkField || this.element.data('link-field') || false;
+  this.linkFormat = DPGlobal.parseFormat(options.linkFormat || this.element.data('link-format') || DPGlobal.getDefaultFormat(this.formatType, 'link'), this.formatType);
+  this.minuteStep = options.minuteStep || this.element.data('minute-step') || 5;
+  this.pickerPosition = options.pickerPosition || this.element.data('picker-position') || 'bottom-right';
+    this.showMeridian = options.showMeridian || this.element.data('show-meridian') || false;
+    this.initialDate = options.initialDate || new Date();
 
-		this._attachEvents();
-		
-			this.formatViewType = "datetime";
-			if ('formatViewType' in options) {
-					this.formatViewType = options.formatViewType;
-			} else if ('formatViewType' in this.element.data()) {
-					this.formatViewType = this.element.data('formatViewType');
-			}
+  this._attachEvents();
 
-		this.minView = 0;
-		if ('minView' in options) {
-			this.minView = options.minView;
+   this.formatViewType = "datetime";
+   if ('formatViewType' in options) {
+     this.formatViewType = options.formatViewType;
+   } else if ('formatViewType' in this.element.data()) {
+     this.formatViewType = this.element.data('formatViewType');
+   }
+
+  this.minView = 0;
+  if ('minView' in options) {
+  	this.minView = options.minView;
 		} else if ('minView' in this.element.data()) {
 			this.minView = this.element.data('min-view');
 		}

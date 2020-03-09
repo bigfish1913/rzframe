@@ -6,17 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="rz-admin" />
-        <module name="rz-biz" />
-        <module name="rz-common" />
-        <module name="rz-contract" />
-        <module name="rz-dal" />
-        <module name="rz-doc" />
-        <module name="rz-lib" />
-        <module name="rz-remoting" />
-        <module name="rz-rzframe" />
-        <module name="rz-service" />
         <module name="rz-servlet" />
+        <module name="rz-admin" />
+        <module name="rz-doc" />
+        <module name="rz-rzframe" />
+        <module name="rz-duboo-client" />
+        <module name="rz-register" />
+        <module name="rz-dobbo-server" />
+        <module name="rz-lib" />
+        <module name="rz-common" />
+        <module name="rz-service" />
+        <module name="rz-biz" />
+        <module name="rz-contract" />
+        <module name="rz-remoting" />
+        <module name="rz-dal" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -26,6 +29,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="rz-register" options="-parameters" />
       <module name="rz-service" options="" />
     </option>
   </component>

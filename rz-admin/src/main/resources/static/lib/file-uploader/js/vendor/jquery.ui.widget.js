@@ -20,78 +20,78 @@
 }(function( $, undefined ) {
 
 var uuid = 0,
-	slice = Array.prototype.slice,
-	_cleanData = $.cleanData;
+ slice = Array.prototype.slice,
+ _cleanData = $.cleanData;
 $.cleanData = function( elems ) {
-	for ( var i = 0, elem; (elem = elems[i]) != null; i++ ) {
-		try {
-			$( elem ).triggerHandler( "remove" );
-		// http://bugs.jquery.com/ticket/8235
-		} catch( e ) {}
-	}
-	_cleanData( elems );
+ for ( var i = 0, elem; (elem = elems[i]) != null; i++ ) {
+  try {
+   $( elem ).triggerHandler( "remove" );
+  // http://bugs.jquery.com/ticket/8235
+  } catch( e ) {}
+ }
+ _cleanData( elems );
 };
 
 $.widget = function( name, base, prototype ) {
-	var fullName, existingConstructor, constructor, basePrototype,
-		// proxiedPrototype allows the provided prototype to remain unmodified
-		// so that it can be used as a mixin for multiple widgets (#8876)
-		proxiedPrototype = {},
-		namespace = name.split( "." )[ 0 ];
+ var fullName, existingConstructor, constructor, basePrototype,
+  // proxiedPrototype allows the provided prototype to remain unmodified
+  // so that it can be used as a mixin for multiple widgets (#8876)
+  proxiedPrototype = {},
+  namespace = name.split( "." )[ 0 ];
 
-	name = name.split( "." )[ 1 ];
-	fullName = namespace + "-" + name;
+ name = name.split( "." )[ 1 ];
+ fullName = namespace + "-" + name;
 
-	if ( !prototype ) {
-		prototype = base;
-		base = $.Widget;
-	}
+ if ( !prototype ) {
+  prototype = base;
+  base = $.Widget;
+ }
 
-	// create selector for plugin
-	$.expr[ ":" ][ fullName.toLowerCase() ] = function( elem ) {
-		return !!$.data( elem, fullName );
-	};
+ // create selector for plugin
+ $.expr[ ":" ][ fullName.toLowerCase() ] = function( elem ) {
+  return !!$.data( elem, fullName );
+ };
 
-	$[ namespace ] = $[ namespace ] || {};
-	existingConstructor = $[ namespace ][ name ];
-	constructor = $[ namespace ][ name ] = function( options, element ) {
-		// allow instantiation without "new" keyword
-		if ( !this._createWidget ) {
-			return new constructor( options, element );
-		}
+ $[ namespace ] = $[ namespace ] || {};
+ existingConstructor = $[ namespace ][ name ];
+ constructor = $[ namespace ][ name ] = function( options, element ) {
+  // allow instantiation without "new" keyword
+  if ( !this._createWidget ) {
+   return new constructor( options, element );
+  }
 
-		// allow instantiation without initializing for simple inheritance
-		// must use "new" keyword (the code above always passes args)
-		if ( arguments.length ) {
-			this._createWidget( options, element );
-		}
-	};
-	// extend with the existing constructor to carry over any static properties
-	$.extend( constructor, existingConstructor, {
-		version: prototype.version,
-		// copy the object used to create the prototype in case we need to
-		// redefine the widget later
-		_proto: $.extend( {}, prototype ),
-		// track widgets that inherit from this widget in case this widget is
-		// redefined after a widget inherits from it
-		_childConstructors: []
-	});
+  // allow instantiation without initializing for simple inheritance
+  // must use "new" keyword (the code above always passes args)
+  if ( arguments.length ) {
+   this._createWidget( options, element );
+  }
+ };
+ // extend with the existing constructor to carry over any static properties
+ $.extend( constructor, existingConstructor, {
+  version: prototype.version,
+  // copy the object used to create the prototype in case we need to
+  // redefine the widget later
+  _proto: $.extend( {}, prototype ),
+  // track widgets that inherit from this widget in case this widget is
+  // redefined after a widget inherits from it
+  _childConstructors: []
+ });
 
-	basePrototype = new base();
-	// we need to make the options hash a property directly on the new instance
-	// otherwise we'll modify the options hash on the prototype that we're
-	// inheriting from
-	basePrototype.options = $.widget.extend( {}, basePrototype.options );
-	$.each( prototype, function( prop, value ) {
-		if ( !$.isFunction( value ) ) {
-			proxiedPrototype[ prop ] = value;
-			return;
-		}
-		proxiedPrototype[ prop ] = (function() {
-			var _super = function() {
-					return base.prototype[ prop ].apply( this, arguments );
-				},
-				_superApply = function( args ) {
+ basePrototype = new base();
+ // we need to make the options hash a property directly on the new instance
+ // otherwise we'll modify the options hash on the prototype that we're
+ // inheriting from
+ basePrototype.options = $.widget.extend( {}, basePrototype.options );
+ $.each( prototype, function( prop, value ) {
+  if ( !$.isFunction( value ) ) {
+   proxiedPrototype[ prop ] = value;
+   return;
+  }
+  proxiedPrototype[ prop ] = (function() {
+   var _super = function() {
+     return base.prototype[ prop ].apply( this, arguments );
+    },
+ 			_superApply = function( args ) {
 					return base.prototype[ prop ].apply( this, args );
 				};
 			return function() {

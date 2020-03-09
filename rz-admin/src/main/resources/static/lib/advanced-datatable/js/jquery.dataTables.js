@@ -26,68 +26,68 @@
 (/** @lends <global> */function( window, document, undefined ) {
 
 (function( factory ) {
-	"use strict";
+ "use strict";
 
-	// Define as an AMD module if possible
-	if ( typeof define === 'function' && define.amd )
-	{
-		define( ['jquery'], factory );
-	}
-	/* Define using browser globals otherwise
-	 * Prevent multiple instantiations if the script is loaded twice
-	 */
-	else if ( jQuery && !jQuery.fn.dataTable )
-	{
-		factory( jQuery );
-	}
+ // Define as an AMD module if possible
+ if ( typeof define === 'function' && define.amd )
+ {
+  define( ['jquery'], factory );
+ }
+ /* Define using browser globals otherwise
+  * Prevent multiple instantiations if the script is loaded twice
+  */
+ else if ( jQuery && !jQuery.fn.dataTable )
+ {
+  factory( jQuery );
+ }
 }
 (/** @lends <global> */function( $ ) {
-	"use strict";
-	/** 
-	 * DataTables is a plug-in for the jQuery Javascript library. It is a 
-	 * highly flexible tool, based upon the foundations of progressive 
-	 * enhancement, which will add advanced interaction controls to any 
-	 * HTML table. For a full list of features please refer to
-	 * <a href="http://datatables.net">DataTables.net</a>.
-	 *
-	 * Note that the <i>DataTable</i> object is not a global variable but is
-	 * aliased to <i>jQuery.fn.DataTable</i> and <i>jQuery.fn.dataTable</i> through which 
-	 * it may be  accessed.
-	 *
-	 *  @class
-	 *  @param {object} [oInit={}] Configuration object for DataTables. Options
-	 *    are defined by {@link DataTable.defaults}
-	 *  @requires jQuery 1.3+
-	 * 
-	 *  @example
-	 *    // Basic initialisation
-	 *    $(document).ready( function {
-	 *      $('#example').dataTable();
-	 *    } );
-	 *  
-	 *  @example
-	 *    // Initialisation with configuration options - in this case, disable
-	 *    // pagination and sorting.
-	 *    $(document).ready( function {
-	 *      $('#example').dataTable( {
-	 *        "bPaginate": false,
-	 *        "bSort": false 
-	 *      } );
-	 *    } );
-	 */
-	var DataTable = function( oInit )
-	{
-		
-		
-		/**
-		 * Add a column to the list used for the table with default values
-		 *  @param {object} oSettings dataTables settings object
-		 *  @param {node} nTh The th element for this column
-		 *  @memberof DataTable#oApi
-		 */
-		function _fnAddColumn( oSettings, nTh )
-		{
-			var oDefaults = DataTable.defaults.columns;
+ "use strict";
+ /**
+  * DataTables is a plug-in for the jQuery Javascript library. It is a
+  * highly flexible tool, based upon the foundations of progressive
+  * enhancement, which will add advanced interaction controls to any
+  * HTML table. For a full list of features please refer to
+  * <a href="http://datatables.net">DataTables.net</a>.
+  *
+  * Note that the <i>DataTable</i> object is not a global variable but is
+  * aliased to <i>jQuery.fn.DataTable</i> and <i>jQuery.fn.dataTable</i> through which
+  * it may be  accessed.
+  *
+  *  @class
+  *  @param {object} [oInit={}] Configuration object for DataTables. Options
+  *    are defined by {@link DataTable.defaults}
+  *  @requires jQuery 1.3+
+  *
+  *  @example
+  *    // Basic initialisation
+  *    $(document).ready( function {
+  *      $('#example').dataTable();
+  *    } );
+  *
+  *  @example
+  *    // Initialisation with configuration options - in this case, disable
+  *    // pagination and sorting.
+  *    $(document).ready( function {
+  *      $('#example').dataTable( {
+  *        "bPaginate": false,
+  *        "bSort": false
+  *      } );
+  *    } );
+  */
+ var DataTable = function( oInit )
+ {
+
+
+  /**
+   * Add a column to the list used for the table with default values
+   *  @param {object} oSettings dataTables settings object
+   *  @param {node} nTh The th element for this column
+   *  @memberof DataTable#oApi
+   */
+  function _fnAddColumn( oSettings, nTh )
+  {
+ 		var oDefaults = DataTable.defaults.columns;
 			var iCol = oSettings.aoColumns.length;
 			var oCol = $.extend( {}, DataTable.models.oColumn, oDefaults, {
 				"sSortingClass": oSettings.oClasses.sSortable,

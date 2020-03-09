@@ -6,18 +6,18 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileRWHelper {
-	public static void fileWrite(String filePath, String content) {
-		File file = new File(filePath);
-		//创建FileWriter对象
-		FileWriter writer = null;
-		try {
-			//如果文件不存在，创建文件
-			if (!file.exists())
-				file.createNewFile();
-			writer = new FileWriter(file);
-			writer.write(content);//写入内容
-			writer.flush();
-			writer.close();
+ public static void fileWrite(String filePath, String content) {
+  File file = new File(filePath);
+  //创建FileWriter对象
+  FileWriter writer = null;
+  try {
+   //如果文件不存在，创建文件
+   if (!file.exists())
+    file.createNewFile();
+   writer = new FileWriter(file);
+   writer.write(content);//写入内容
+   writer.flush();
+  	writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

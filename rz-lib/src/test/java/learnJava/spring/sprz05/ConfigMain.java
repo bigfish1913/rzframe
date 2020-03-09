@@ -8,13 +8,13 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAspectJAutoProxy
 public class ConfigMain {
 
-	@Bean
-	public OrderBiz getOrderBiz(){
-		return new OrderBiz();
-	}
-	
-	@Bean
-	public LogAspector getLogAspector(){
-		return new LogAspector();
-	}
+ @Bean
+ public OrderBiz getOrderBiz(){
+  return new OrderBiz();
+ }
+ 
+ @Bean
+ public LogAspector getLogAspector(){
+  return new LogAspector();
+ }
 }

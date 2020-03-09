@@ -16,9 +16,9 @@ import javax.sql.DataSource;
 @ComponentScan("learnJava.spring.sprz12.transactional")
 @EnableTransactionManagement
 public class RzConfig {
-	
-	@Bean
-	public DataSource dataSource() {
+ 
+ @Bean
+ public DataSource dataSource() {
 		final HikariConfig cpConfig = new HikariConfig();
 		cpConfig.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		cpConfig.setJdbcUrl("jdbc:mysql://localhost:3306/rzframe?characterEncoding=utf8&useSSL=true&autoReconnect=true&failOverReadOnly=false&serverTimezone=UTC");

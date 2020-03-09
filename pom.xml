@@ -17,8 +17,10 @@
         <module>rz-biz</module>
         <module>rz-lib</module>
         <module>rz-servlet</module>
-        <module>rz-grabticket</module>
+
         <module>rz-remoting</module>
+        <module>rz-dobbo-server</module>
+        <module>rz-duboo-client</module>
     </modules>
     <packaging>pom</packaging>
     <properties>

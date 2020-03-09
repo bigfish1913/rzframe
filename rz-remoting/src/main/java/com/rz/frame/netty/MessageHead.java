@@ -74,10 +74,10 @@ public class MessageHead {
     }
     
  
-	
  
-	
-	@Override
+ 
+ 
+ @Override
     public String toString() {
         return "MessageHead{" + "headData=" + headData + ", length=" + length + ", token='" + token + '\'' + ", createDate=" + createDate + ", messageId='" + messageId + '\'' + ", messageType=" + messageType + '}';
     }

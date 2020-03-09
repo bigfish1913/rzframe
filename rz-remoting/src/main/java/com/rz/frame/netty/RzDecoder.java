@@ -13,23 +13,23 @@ import static com.rz.frame.netty.HeartConstant.RemotingHeader.DEFAULT_MAGIC_STAR
 
 
 public class RzDecoder extends ByteToMessageDecoder {
-	private int BASE_LENGTH = 4 + 4 + 50 + 50 + 50 + 1 +1 ;//协议头 类型 int+length 4个字节+令牌和 令牌生成时间50个字节
-	private int headData = DEFAULT_MAGIC_START_CODE;//协议开始标志
-	
-	@Override
-	protected void decode(ChannelHandlerContext ctx, ByteBuf buffer, List<Object> out) {
-		// 刻度长度必须大于基本长度
-		if (buffer.readableBytes() >= BASE_LENGTH) {
-			/**
-			 * 粘包 发送频繁 可能多次发送黏在一起 需要考虑  不过一个客户端发送太频繁也可以推断是否是攻击
-			 */
-			//防止soket流攻击。客户端传过来的数据太大不合理
-			if (buffer.readableBytes() > 1024*1024*10) {
-				buffer.skipBytes(buffer.readableBytes());
-				
-			}
-		}
-		int beginIndex;//记录包开始位置
+ private int BASE_LENGTH = 4 + 4 + 50 + 50 + 50 + 1 +1 ;//协议头 类型 int+length 4个字节+令牌和 令牌生成时间50个字节
+ private int headData = DEFAULT_MAGIC_START_CODE;//协议开始标志
+ 
+ @Override
+ protected void decode(ChannelHandlerContext ctx, ByteBuf buffer, List<Object> out) {
+  // 刻度长度必须大于基本长度
+  if (buffer.readableBytes() >= BASE_LENGTH) {
+   /**
+    * 粘包 发送频繁 可能多次发送黏在一起 需要考虑  不过一个客户端发送太频繁也可以推断是否是攻击
+    */
+   //防止soket流攻击。客户端传过来的数据太大不合理
+   if (buffer.readableBytes() > 1024*1024*10) {
+    buffer.skipBytes(buffer.readableBytes());
+    
+   }
+  }
+  int beginIndex;//记录包开始位置
 		while (true) {
 			// 获取包头开始的index
 			beginIndex = buffer.readerIndex();

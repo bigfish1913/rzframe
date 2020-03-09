@@ -84,6 +84,11 @@
             <artifactId>netty-codec</artifactId>
             <version>4.1.36.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>9.4.17.v20190418</version>
+        </dependency>
     </dependencies>
 
     <build>

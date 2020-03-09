@@ -1,12 +1,12 @@
 package com.rz.frame.netty;
 
 public interface HeartConstant {
-	public interface RemotingHeader {
-		public final static int LENGTH_FIELD = 10;
-		public final static int DEFAULT_MAGIC_START_CODE = 0xdec1_0ade;
-		public final static int DEFAULT_MAGIC_END_CODE = 0xdec1_0ade;
-		public final static String HeartMessage = "OK";
-	}
+ public interface RemotingHeader {
+  public final static int LENGTH_FIELD = 10;
+  public final static int DEFAULT_MAGIC_START_CODE = 0xdec1_0ade;
+  public final static int DEFAULT_MAGIC_END_CODE = 0xdec1_0ade;
+  public final static String HeartMessage = "OK";
+ }
 	
 	public interface Address {
 		public final static String IP = "127.0.0.1";

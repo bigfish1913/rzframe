@@ -9,16 +9,16 @@ import org.aspectj.lang.annotation.*;
 
 @Aspect
 public class LogAspector {
-	
-	@Pointcut("execution(public void learnJava.spring.sprz05.OrderBiz.*(..))")
-	public void pointCut(){}
-	
-	@Before("pointCut()")
-	public void logStart(JoinPoint joinPoint) {
-		System.out.println(joinPoint);
-		RzLogger.info("方法开始执行....");
-	}
-	
+ 
+ @Pointcut("execution(public void learnJava.spring.sprz05.OrderBiz.*(..))")
+ public void pointCut(){}
+ 
+ @Before("pointCut()")
+ public void logStart(JoinPoint joinPoint) {
+  System.out.println(joinPoint);
+  RzLogger.info("方法开始执行....");
+ }
+ 
 	@After("pointCut()")
 	public void logEnd() {
 		RzLogger.info("方法执行完成....");
