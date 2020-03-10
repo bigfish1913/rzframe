@@ -32,6 +32,11 @@ public class ClassComplieFile {
 		}
 	}
 	
+	public String getStrNext(int length) {
+		return ClassUtil.hexStringToString(getHexNext(length));
+	}
+	
+	
 	public Integer getIntNext(int length) {
 		String next = getHexNext(length);
 		return Integer.parseInt(next, 16);
