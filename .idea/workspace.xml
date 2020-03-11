@@ -7,16 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3258aa84-2664-4d11-9de2-91ce69d774e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassMainData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/Constant/Wrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ConstantEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/BaseCode.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassComplieFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassComplieFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassEnum.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassParseInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassParseInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ConstantInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ConstantInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/FieldInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/FieldInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/Constant/CONSTANT_Fieldref_info.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/Constant/CONSTANT_Fieldref_info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/Constant/CONSTANT_Integer_info.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/Constant/CONSTANT_Integer_info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/Constant/CONSTANT_MethodHandle_info.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/Constant/CONSTANT_MethodHandle_info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/Constant/CONSTANT_Methodref_info.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/Constant/CONSTANT_Methodref_info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/Constant/CONSTANT_Utf8_info.java" beforeDir="false" afterPath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/Constant/CONSTANT_Utf8_info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/MagicCodeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/MethodInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/VersionInfo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +60,9 @@
         <option value="HTML File" />
         <option value="JUnit4 Test Class" />
         <option value="spring-beans.schema" />
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -420,11 +426,11 @@
       <item itemvalue="Application.ClassReader" />
       <item itemvalue="Application.FinallyCode" />
       <item itemvalue="Application.ClassApp" />
+      <item itemvalue="Application.ClassApp (1)" />
       <item itemvalue="Spring Boot.RzServiceApplication" />
       <item itemvalue="Spring Boot.RzRegisterApplication" />
       <item itemvalue="Tomcat Server.Servlet" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.14" />
-      <item itemvalue="Application.ClassApp (1)" />
     </list>
     <recent_temporary>
       <list>
@@ -681,7 +687,8 @@
       <workItem from="1583543610465" duration="23906000" />
       <workItem from="1583638155802" duration="12213000" />
       <workItem from="1583761879257" duration="5302000" />
-      <workItem from="1583847712390" duration="7812000" />
+      <workItem from="1583847712390" duration="8428000" />
+      <workItem from="1583936189476" duration="4091000" />
     </task>
     <servers />
   </component>
@@ -772,10 +779,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="224" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583552839377" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1583852344499">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1583940202834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583852344499" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583940202834" />
     <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582338045638">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -784,50 +791,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1135" y="401" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583855407672" />
-    <state width="548" height="466" key="DebuggerActiveHint" timestamp="1583854980695">
+    <state width="548" height="466" key="DebuggerActiveHint" timestamp="1583940404880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="548" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583854980695" />
+    <state width="548" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583940404880" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1582206493555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1582206493555" />
-    <state width="1411" height="384" key="GridCell.Tab.0.bottom" timestamp="1583855045260">
+    <state width="1406" height="384" key="GridCell.Tab.0.bottom" timestamp="1583940391286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1411" height="384" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583855045260" />
+    <state width="1406" height="384" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583940391286" />
     <state width="1397" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582469565619" />
-    <state width="1411" height="384" key="GridCell.Tab.0.center" timestamp="1583855045260">
+    <state width="1406" height="384" key="GridCell.Tab.0.center" timestamp="1583940391286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1411" height="384" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583855045260" />
+    <state width="1406" height="384" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583940391286" />
     <state width="1397" height="325" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582469565619" />
-    <state width="1411" height="384" key="GridCell.Tab.0.left" timestamp="1583855045260">
+    <state width="1406" height="384" key="GridCell.Tab.0.left" timestamp="1583940391286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1411" height="384" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583855045260" />
+    <state width="1406" height="384" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583940391286" />
     <state width="1397" height="325" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582469565618" />
-    <state width="1411" height="384" key="GridCell.Tab.0.right" timestamp="1583855045260">
+    <state width="1406" height="384" key="GridCell.Tab.0.right" timestamp="1583940391286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1411" height="384" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583855045260" />
+    <state width="1406" height="384" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583940391286" />
     <state width="1397" height="325" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582469565619" />
-    <state width="1411" height="384" key="GridCell.Tab.1.bottom" timestamp="1583855045830">
+    <state width="1406" height="384" key="GridCell.Tab.1.bottom" timestamp="1583940391815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1411" height="384" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583855045830" />
-    <state width="1411" height="384" key="GridCell.Tab.1.center" timestamp="1583855045830">
+    <state width="1406" height="384" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583940391815" />
+    <state width="1406" height="384" key="GridCell.Tab.1.center" timestamp="1583940391815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1411" height="384" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583855045830" />
-    <state width="1411" height="384" key="GridCell.Tab.1.left" timestamp="1583855045830">
+    <state width="1406" height="384" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583940391815" />
+    <state width="1406" height="384" key="GridCell.Tab.1.left" timestamp="1583940391815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1411" height="384" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583855045830" />
-    <state width="1411" height="384" key="GridCell.Tab.1.right" timestamp="1583855045830">
+    <state width="1406" height="384" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583940391815" />
+    <state width="1406" height="384" key="GridCell.Tab.1.right" timestamp="1583940391815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1411" height="384" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583855045830" />
+    <state width="1406" height="384" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583940391815" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1580833681320">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -852,10 +859,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1581943011122" />
-    <state x="636" y="253" width="786" height="600" key="find.popup" timestamp="1583853310221">
+    <state x="636" y="253" width="786" height="600" key="find.popup" timestamp="1583938333956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="253" width="786" height="600" key="find.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583853310221" />
+    <state x="636" y="253" width="786" height="600" key="find.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1583938333956" />
     <state x="334" y="130" key="new project wizard" timestamp="1582108287116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1640,48 +1647,53 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="555" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java</url>
-          <line>125</line>
+          <line>128</line>
           <option name="timeStamp" value="564" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java</url>
-          <line>105</line>
+          <line>108</line>
           <option name="timeStamp" value="565" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java</url>
-          <line>96</line>
+          <line>99</line>
           <option name="timeStamp" value="567" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java</url>
-          <line>98</line>
+          <line>101</line>
           <option name="timeStamp" value="568" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java</url>
-          <line>92</line>
+          <line>95</line>
           <option name="timeStamp" value="570" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java</url>
-          <line>90</line>
+          <line>93</line>
           <option name="timeStamp" value="571" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java</url>
-          <line>70</line>
+          <line>73</line>
           <option name="timeStamp" value="572" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java</url>
-          <line>110</line>
+          <line>113</line>
           <option name="timeStamp" value="573" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="574" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rz-lib/src/test/java/learnJava/rz20200309/ParseClass/ClassApp.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="576" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/rz-grabticket/src/main/java/com/rz/frame/biz/LoginUtils.java</url>

@@ -1,15 +1,21 @@
 package learnJava.rz20200309.ParseClass;
 
 import learnJava.rz20200307.CodeInfo;
+import learnJava.rz20200309.ParseClass.Constant.CONSTANT_Utf8_info;
+import learnJava.rz20200309.ParseClass.Constant.Wrapper;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 public class ClassParseInfo {
 	
-	private MagicCodeInfo magicCodeInfo;
-	private VersionInfo versionInfo;
-	private HashMap<String, List<String>> constantInfo;
+	private String magicCode;
+	private String versionInfo;
+	private String jdkVersionInfo;
+	private int constantCount;
+	private HashMap<Integer, List<Wrapper<?>>> constantMap;
+	private HashMap<Integer, List<Wrapper<CONSTANT_Utf8_info>>> utf8Map;
 	private String accessFlag;
 	private String classIndex;
 	private String parentIndex;
@@ -20,6 +26,43 @@ public class ClassParseInfo {
 	private List<FieldInfo> methodList;
 	private int methodCount;
 	private CodeInfo codeInfo;
+	
+	public ClassParseInfo() {
+		this.constantMap = new HashMap<>();
+		this.utf8Map = new HashMap<>();
+	}
+	
+	public String getMagicCode() {
+		return magicCode;
+	}
+	
+	public void setMagicCode(String magicCode) {
+		this.magicCode = magicCode;
+	}
+	
+	public String getVersionInfo() {
+		return versionInfo;
+	}
+	
+	public void setVersionInfo(String versionInfo) {
+		this.versionInfo = versionInfo;
+	}
+	
+	public String getJdkVersionInfo() {
+		return jdkVersionInfo;
+	}
+	
+	public void setJdkVersionInfo(String jdkVersionInfo) {
+		this.jdkVersionInfo = jdkVersionInfo;
+	}
+	
+	public int getConstantCount() {
+		return constantCount;
+	}
+	
+	public void setConstantCount(int constantCount) {
+		this.constantCount = constantCount;
+	}
 	
 	public String getAccessFlag() {
 		return accessFlag;
@@ -51,30 +94,6 @@ public class ClassParseInfo {
 	
 	public void setInterFaceIndex(String interFaceIndex) {
 		this.interFaceIndex = interFaceIndex;
-	}
-	
-	public MagicCodeInfo getMagicCodeInfo() {
-		return magicCodeInfo;
-	}
-	
-	public void setMagicCodeInfo(MagicCodeInfo magicCodeInfo) {
-		this.magicCodeInfo = magicCodeInfo;
-	}
-	
-	public VersionInfo getVersionInfo() {
-		return versionInfo;
-	}
-	
-	public void setVersionInfo(VersionInfo versionInfo) {
-		this.versionInfo = versionInfo;
-	}
-	
-	public HashMap<String, List<String>> getConstantInfo() {
-		return constantInfo;
-	}
-	
-	public void setConstantInfo(HashMap<String, List<String>> constantInfo) {
-		this.constantInfo = constantInfo;
 	}
 	
 	public int getFiledCount() {
@@ -116,4 +135,20 @@ public class ClassParseInfo {
 	public void setCodeInfo(CodeInfo codeInfo) {
 		this.codeInfo = codeInfo;
 	}
+	
+	public <T> void pushConstant(int index, int type, T methodref) {
+		Wrapper<T> wrapper = new Wrapper<T>(index, type, methodref);
+		List<Wrapper<?>> wrappers = this.constantMap.computeIfAbsent(index, k -> new ArrayList<>());
+		wrappers.add(wrapper);
+		if (type == 1) {
+			List<Wrapper<CONSTANT_Utf8_info>> utf8List = this.utf8Map.computeIfAbsent(index, k -> new ArrayList<>());
+			CONSTANT_Utf8_info utf8Instance = (CONSTANT_Utf8_info) methodref;
+			Wrapper<CONSTANT_Utf8_info> utf8 = new Wrapper<>(index, type, utf8Instance);
+			utf8List.add(utf8);
+		}
+		
+		
+	}
+	
+	
 }
